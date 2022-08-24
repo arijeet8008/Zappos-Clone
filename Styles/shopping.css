@@ -1,0 +1,629 @@
+body {
+  font-family: "Open Sans", sans-serif;
+}
+
+/* <!-- *****************    Sorting   **************** --> */
+
+#sort_heading {
+  width: 95%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#cat_title {
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+#cat_title > p {
+  margin-top: -1%;
+  font-size: large;
+}
+
+#sorting {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  width: 40%;
+  font-size: larger;
+}
+#sorting select {
+  width: 61%;
+  height: 50px;
+  font-size: large;
+}
+
+/* <!-- ##################   Main Body - Parent      ##################### --> */
+
+#parent {
+  width: 95%;
+  margin: auto;
+  display: flex;
+}
+
+/* //////////////////////         left        //////////////////////// */
+
+#left {
+  width: 17%;
+}
+.selectSize {
+  width: 80%;
+  margin-left: 10%;
+  height: 1.3%;
+  display: flex;
+  padding: 10px;
+  align-items: center;
+  color: #045d87;
+  border-radius: 20px;
+  background-color: #e0f2ee;
+}
+
+.sections {
+  display: block;
+}
+
+@media (max-width: 768px) {
+  .sections {
+    display: none;
+  }
+
+  .sections .subSection {
+    display: block;
+  }
+}
+
+@media (min-width: 769px) {
+  .sections {
+    margin-bottom: 16px;
+  }
+
+  .sections:hover {
+    cursor: pointer;
+  }
+}
+.subSection {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  margin-left: 10%;
+  margin-bottom: 3%;
+  color: black;
+}
+.subSection > label {
+  font-size: x-large;
+  font-weight: 700;
+}
+.subSection > input {
+  width: 80%;
+  border-radius: 5px;
+  padding: 15px;
+}
+
+li {
+  display: block;
+}
+.sections1 {
+  background-color: transparent;
+  border: none;
+  color: #003953;
+  color: #005b94;
+  display: inline;
+  display: block;
+  font-size: 100%;
+  font: 400 14px Open Sans, sans-serif;
+  margin-top: 8px;
+  padding: 0;
+  text-align: left;
+  text-decoration: none;
+}
+
+.sections1:hover {
+  cursor: pointer;
+}
+
+.sections1:hover,
+.sections1:visited {
+  color: #003953;
+}
+
+.sections1:hover {
+  border-color: #003953;
+}
+
+.sections1:after {
+  content: "";
+  display: inline-block;
+  height: 13px;
+  margin-left: 8px;
+  vertical-align: middle;
+  width: 14px;
+}
+
+.list li,
+.hw-z {
+  border-top: 1px solid #e8e8e8;
+  font-weight: 700;
+  line-height: 50px;
+}
+
+.list {
+  display: none;
+}
+
+.list li:first-child {
+  border-top: 0;
+}
+
+@media (min-width: 769px) {
+  .list {
+    border: 0;
+    display: block;
+    max-height: 175px;
+    overflow: auto;
+    padding-bottom: 0;
+    padding-top: 7px;
+    transition: max-height, padding 0.25s ease;
+  }
+}
+
+.list::-webkit-scrollbar {
+  -webkit-appearance: none;
+  width: 7px;
+}
+
+.list::-webkit-scrollbar-thumb {
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 4px;
+}
+
+.list a {
+  color: #1f1f1f;
+  color: #003953;
+  display: block;
+  line-height: 1.5;
+}
+
+@media (min-width: 769px) {
+  .list a {
+    word-wrap: break-word;
+    position: relative;
+    text-decoration: none;
+  }
+
+  .list a:focus,
+  .list a:hover {
+    background: none;
+  }
+
+  .list a:focus span,
+  .list a:hover span {
+    color: #0076bd;
+  }
+
+  .list a.list1:before {
+    background-image: url(https://m.media-amazon.com/images/G/01/zappos/melody/melody-sprite.2021.09.16._TTH_.svg);
+    background-position: -5px -160px;
+    background-repeat: no-repeat;
+    content: "";
+    display: inline-block;
+    height: 15px;
+    left: 0;
+    margin-right: 2px;
+    position: absolute;
+    top: 0;
+    top: 12px;
+    vertical-align: middle;
+    width: 15px;
+  }
+
+  .list a.sizelist {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 2px;
+    color: #003953;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 34px;
+    text-align: center;
+    padding: 0;
+    text-decoration: none;
+    transition: all 0.3s ease 0s;
+    white-space: nowrap;
+    width: calc(25% - 8px);
+  }
+
+  .list a.sizelist:hover {
+    border-color: #003953;
+  }
+
+  .list a.sizelist:disabled {
+    background: #f5f5f5;
+    border-color: #ddd;
+    box-shadow: none;
+    color: #b0b0b0;
+    cursor: not-allowed;
+  }
+
+  .list a.sizelist .list12 {
+    display: none;
+  }
+}
+
+@media (max-width: 768px) {
+  .list a {
+    border-bottom: 1px solid #dbdbdb;
+    line-height: 50px;
+    padding-left: 20px;
+    position: relative;
+  }
+
+  .list a .list12 {
+    color: #777;
+    float: right;
+    font-size: 12px;
+    margin-right: 40px;
+  }
+}
+
+.list a.list1 {
+  padding-left: 20px;
+  position: relative;
+}
+
+.listli {
+  border: 0;
+  padding-left: 0;
+}
+
+.list span:after,
+.list a:after {
+  display: none;
+}
+
+.list1 {
+  margin-bottom: 16px;
+  padding-top: 8px;
+  position: relative;
+}
+
+@media (min-width: 769px) {
+  .list1 {
+    display: -moz-flex;
+    display: flex;
+    font-size: 16px;
+    -moz-justify-content: space-between;
+    justify-content: space-between;
+    margin-bottom: 16px;
+    min-height: 20px;
+    overflow: visible;
+    position: relative;
+  }
+}
+
+@media (max-width: 768px) {
+  .list1 {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
+.list12 {
+  color: #777;
+  float: right;
+  margin-right: 50px;
+}
+
+.selectsize {
+  position: relative;
+}
+
+@media (min-width: 769px) {
+  .selectsize:after {
+    background-image: url(https://m.media-amazon.com/images/G/01/zappos/melody/melody-sprite.2021.09.16._TTH_.svg);
+    background-position: -55px -40px;
+    background-repeat: no-repeat;
+    content: "";
+    height: 5px;
+    pointer-events: none;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%) rotate(0deg);
+    width: 9px;
+  }
+}
+
+@media (max-width: 650px) {
+  h1.sizelist {
+    font-size: 24px;
+  }
+}
+
+@media (max-width: 768px) {
+  h1.sizelist {
+    flex: 100%;
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: 16px;
+  }
+}
+
+#selectSize {
+  width: 80%;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(4, 200px);
+}
+.selectsize > button {
+  width: 90%;
+  margin-left: 10%;
+  text-align: start;
+  background-color: rgb(255, 255, 255);
+  border: none;
+  font: 1.2em sans-serif;
+  padding: 15px;
+}
+
+/* ////////////////          Right         ///////////////////// */
+
+#right {
+  width: 83%;
+}
+
+/* ////////////////////////// */
+
+.searchSelected > h2 {
+  text-align: start;
+  margin-left: 4%;
+}
+@media (min-width: 651px) {
+  .searchSelected {
+    display: inline-block;
+    text-align: left;
+    vertical-align: middle;
+    width: 100%;
+  }
+
+  .searchSelected ul {
+    font-size: 10px;
+    line-height: 10px;
+    margin: 0 10px;
+    width: calc(100% - 90px);
+  }
+
+  .searchSelected ul li {
+    background: none;
+    margin-top: 0;
+  }
+
+  .searchSelected ul li.Mv-z {
+    color: #555;
+    font-size: 24px;
+    font-weight: 700;
+    padding: 0;
+  }
+
+  .searchSelected ul li.Mv-z h1 {
+    display: inline;
+    font-size: 24px;
+    margin: 0;
+  }
+}
+
+#searchSelected {
+  background: #fff;
+  overflow-x: auto;
+  text-align: center;
+}
+
+#searchSelected,
+#searchSelected ul {
+  white-space: nowrap;
+}
+
+#searchSelected ul {
+  overflow: hidden;
+  vertical-align: middle;
+}
+
+#searchSelected li,
+#searchSelected ul {
+  display: inline-block;
+}
+
+#searchSelected li {
+  margin: 10px 10px 10px 0;
+}
+
+#searchSelected li a,
+#searchSelected li a:hover {
+  background: #e5f1f8;
+  border: 1px solid transparent;
+  border-radius: 30px;
+  color: #0076bd;
+  display: inline-block;
+  font: 700 14px Open Sans, sans-serif;
+  margin: 0.3em;
+  padding: 8px 32px 8px 16px;
+  position: relative;
+  text-decoration: none;
+}
+
+#searchSelected li a:hover,
+#searchSelected li a:hover:hover {
+  border-color: #003953;
+}
+
+#searchSelected li a:after,
+#searchSelected li a:hover:after {
+  background-position: -80px -5px;
+  background-repeat: no-repeat;
+  content: "";
+  height: 16px;
+  position: absolute;
+  right: 8px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 16px;
+}
+
+#searchSelected li.Kv-z:hover a {
+  color: #0076bd;
+}
+
+.searchSelectedList {
+  background: none;
+}
+
+.searchSelectedList button {
+  background: #e5f1f8;
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 30px;
+  color: #0076bd;
+  color: #003953;
+  display: inline-block;
+  font: 700 14px Open Sans, sans-serif;
+  margin: 0;
+  padding: 8px 16px;
+  position: relative;
+  text-decoration: none;
+}
+
+.searchSelectedList button:hover {
+  border-color: #003953;
+  cursor: pointer;
+}
+
+/* ////////////////   Products     //////////////// */
+
+#product {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  width: 95%;
+  margin: auto;
+}
+.cartProductsLists {
+  width: 100%;
+  height: 700px;
+  line-height: 60%;
+  background-color: #f5f5f5;
+}
+.cartProductsLists > h2,
+.cartProductsLists > h3 {
+  font-weight: 400;
+  color: #003953;
+  cursor: pointer;
+}
+.cartProductsLists > h2:hover,
+.cartProductsLists > h3:hover {
+  color: #0076cc;
+  text-decoration: underline;
+}
+#product > div > img {
+  width: 100%;
+}
+
+#product > div > img + p:hover {
+  color: rgb(102, 168, 180);
+  cursor: pointer;
+}
+
+#product > div > img:hover {
+  cursor: pointer;
+}
+
+#product > div > div {
+  display: flex;
+  align-items: center;
+}
+
+/* ////////////////    Products Styles   ////////////////// */
+
+select {
+  height: 35px;
+  border-radius: 5px;
+  padding: 3px;
+  margin-right: 20px;
+  width: 120px;
+}
+select:hover {
+  cursor: pointer;
+}
+
+#colorDiv {
+  width: 100%;
+  height: 8%;
+  margin-top: -3%;
+}
+
+#Fst_color {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: black;
+  margin: 5px;
+}
+#Fst_color:hover {
+  width: 50px;
+  height: 50px;
+  background-color: black;
+  margin: 5px;
+}
+
+#Snd_color {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: none;
+  background-color: #e04847;
+  margin: 5px;
+}
+#Snd_color:hover {
+  width: 50px;
+  height: 50px;
+  border: none;
+  background-color: #e04847;
+  margin: 5px;
+}
+
+.color:hover {
+  border: 1px solid #6eacc9;
+  cursor: pointer;
+}
+
+#purchase_btn {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 10px;
+}
+
+#cart_btn {
+  width: 50%;
+  border: none;
+  height: 50px;
+  font-size: 25px;
+  font-weight: 500;
+  border-radius: 6px;
+  background-color: #95ef68;
+  color: green;
+}
+
+#cart_btn:hover {
+  background-color: #c3f4aa;
+  color: green;
+  cursor: pointer;
+}
+
+@media all and (max-width: 780px) and (min-width: 320px) {
+  #product {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* ///////////////////////////////////////////////////////// */
