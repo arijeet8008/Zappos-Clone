@@ -26,13 +26,16 @@ body {
   display: flex;
   justify-content: flex-end;
   align-items: center;
-  width: 40%;
+  width: 50%;
   font-size: larger;
 }
 #sorting select {
   width: 61%;
   height: 50px;
   font-size: large;
+}
+.sortOptions{
+  width: 100%;
 }
 
 /* <!-- ##################   Main Body - Parent      ##################### --> */
@@ -560,35 +563,97 @@ select:hover {
   width: 100%;
   height: 8%;
   margin-top: -3%;
+  margin-bottom: 2%;
 }
 
-#Fst_color {
-  width: 30px;
-  height: 30px;
+#black_color {
+  width: 40px;
+  height: 40px;
   border-radius: 50%;
   background-color: black;
   margin: 5px;
 }
-#Fst_color:hover {
+#black_color:hover {
   width: 50px;
   height: 50px;
   background-color: black;
   margin: 5px;
 }
 
-#Snd_color {
+#red_color {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  border: none;
+  background-color: #e04847;
+  margin: 5px;
+}
+#red_color:hover {
+  width: 50px;
+  height: 50px;
+  border: none;
+  background-color: #e04847;
+  margin: 5px;
+}
+
+#pink_color {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  border: none;
+  background-color: pink;
+  margin: 5px;
+}
+#pink_color:hover {
+  width: 50px;
+  height: 50px;
+  border: none;
+  background-color: pink;
+  margin: 5px;
+}
+#green_color {
   width: 40px;
   height: 40px;
   border-radius: 50%;
   border: none;
-  background-color: #e04847;
+  background-color: green;
   margin: 5px;
 }
-#Snd_color:hover {
+#green_color:hover {
   width: 50px;
   height: 50px;
   border: none;
-  background-color: #e04847;
+  background-color: green;
+  margin: 5px;
+}
+#blue_color {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  border: none;
+  background-color: rgb(38, 38, 158);
+  margin: 5px;
+}
+#blue_color:hover {
+  width: 50px;
+  height: 50px;
+  border: none;
+  background-color: rgb(37, 37, 127);
+  margin: 5px;
+}
+#yellow_color {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: none;
+  background-color: rgb(195, 195, 7);
+  margin: 5px;
+}
+#yellow_color:hover {
+  width: 50px;
+  height: 50px;
+  border: none;
+  background-color: rgb(188, 188, 5);
   margin: 5px;
 }
 
@@ -596,8 +661,11 @@ select:hover {
   border: 1px solid #6eacc9;
   cursor: pointer;
 }
+#ratings{
+  font-size: larger;
+}
 
-#purchase_btn {
+/* #purchase_btn {
   display: flex;
   justify-content: flex-end;
   margin-top: 10px;
@@ -618,7 +686,7 @@ select:hover {
   background-color: #c3f4aa;
   color: green;
   cursor: pointer;
-}
+} */
 
 @media all and (max-width: 780px) and (min-width: 320px) {
   #product {
