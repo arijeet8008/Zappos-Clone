@@ -68,6 +68,8 @@
     font-size: 16px;
     border: none;
     cursor: pointer;
+    font: 400 16px Open Sans,sans-serif;
+    font-weight:bold;
   }
   
   .dropbtn:hover, .dropbtn:focus {
@@ -205,4 +207,13 @@
 #s4_p2_navbar{
     display: flex;
     align-items: center;
+    gap: 0 10px;
+    margin-right: 10px;
+   
+}
+#s4_p2_navbar a {
+    text-decoration: none;
+    color:  #003953;
+    font: 400 16px Open Sans,sans-serif;
+    font-weight:bold;
 }
