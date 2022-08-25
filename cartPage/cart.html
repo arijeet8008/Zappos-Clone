@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      href="https://www.zappos.com/favicon.ico"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="cart.css" />
+    <title>My Cart | Zappos.com</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script>
+      $(function () {
+        $("#header").load("header.html");
+        $("#footer").load("footer.html");
+      });
+    </script>
+  </head>
+  <body>
+    <div id="header"></div>
+    <div id="cart-page">
+      <div class="top-bar">
+        <p>
+            Check out to earn up to $2.12 in VIP points
+            Join today to start earning! 
+        </p>
+      </div>
+      <div id="shipping-privacy">
+        
+          <h3>CONTINUE SHOPPING</h3>
+        
+        <div class="two-row">
+          <div class="free-shipping">
+            <div class="img">
+              <img
+                src="https://www.zappos.com/marty-assets/free-shipping.bd37fd1231ea350ba2156bfeec892126.svg"
+                alt=""
+              />
+            </div>
+            <div class="below-img-text">
+              <p>Free Shipping and Returns</p>
+              <p>365 days to return items for a refund!</p>
+              <a
+                href="https://www.zappos.com/c/general-questions#shipping-and-return"
+                >SHIPPING AND RETURN POLICY</a
+              >
+            </div> 
+          </div>
+          <div class="privacy-policy">
+            <div class="img">
+              <img
+                src="https://www.zappos.com/marty-assets/privacy-policy.d2b80998a1464b26da8b58e4f78f2b0b.svg"
+                alt=""
+              />
+            </div>
+            <div class="below-img-text">
+              <p>Privacy Policy</p>
+              <p>We don’t rent or sell your personal information to anyone.</p>
+              <a href="https://www.zappos.com/c/privacy-policy">
+                READ OUR PRIVACY POLICY
+              </a>
+            </div>
+          </div>
+        </div>
+      </div> 
+      <div class="table-heading">
+        <h1 class="totQt"> My Cart</h1>
+      </div>
+      <div id="cart-table">
+        <div class="item-table">
+          <div class="table-top">
+            <p>Item</p>
+            <p>Price / Quantity</p>
+          </div>
+          <div class="tbody"></div>
+        </div>
+        <div class="checkout-table">
+          <button class="chek-btn">Proceed to checkout</button>
+          <p>Have a Promotional Code? Proceed to checkout to redeem it.</p>
+          <h3 class="totQty">Cart Summary (Items)</h3>
+          <div>
+            <h4 class="smTQ">Subtotal (items)</h4>
+            <h4 class="page-total"></h4>
+          </div>
+          <p class="chekbox-below">
+            Zappos.com LLC is required by law to collect
+            <a href="https://www.zappos.com/c/state-tax-popup">sales tax</a> on
+            orders shipped to specific states. Appropriate charges will be added
+            to your merchandise total and displayed for your review at checkout.
+          </p>
+          <p class="chekbox-below">
+            Unless otherwise noted, all products are sold by Zappos.com LLC.
+          </p>
+        </div>
+      </div>
+      <div class="popular-categories">
+        <h1>Customers Who Bought Items In Your Shopping Cart Also Bought</h1>
+        <div class="product-row">
+            <div class="productPic">
+              <div>
+                <img
+                  src="https://m.media-amazon.com/images/I/71A8E8GXv-L._SR255,340_.jpg"
+                  alt=""
+                />
+              </div>
+              <p>Steve Madden</p>
+              <p>Submit Wedge Sandal</p>
+            </div>
+          
+            <div class="productPic">
+              <div>
+                <img
+                  src="https://m.media-amazon.com/images/I/71FrL5IGzbL._SR255,340_.jpg"
+                  alt=""
+                />
+              </div>
+              <p>Brooks</p>
+              <p>Sherpa 7" Shorts</p>
+            </div>
+          
+            <div class="productPic">
+              <div>
+                <img
+                  src="https://m.media-amazon.com/images/I/71UL-UQp6LL._SR255,340_.jpg"
+                  alt=""
+                />
+              </div>
+              <p>Charles by Charles David</p>
+              <p>Love</p>
+            </div>
+          
+            <div class="productPic">
+              <div>
+                <img
+                  src="https://m.media-amazon.com/images/I/71LAiDak0GL._SR255,340_.jpg"
+                  alt=""
+                />
+              </div>
+              <p>New Balance</p>
+              <p>Impact run & shorts</p>
+            </div>
+          
+            <div class="productPic">
+              <div>
+                <img
+                  src="https://m.media-amazon.com/images/I/81wQx6tiJzS._AC_SX255_.jpg"
+                  alt=""
+                />
+              </div>
+              <p>Mia</p>
+              <p>Maine</p>
+            </div>
+          
+            <div class="productPic">
+              <div>
+                <img
+                  src="https://m.media-amazon.com/images/I/81xk4RarglS._AC_SR736,920_.jpg"
+                  alt=""
+                />
+              </div>
+              <p>Alternative</p>
+              <p>Vintage 50/50 Backstage Tank Top</p>
+            </div>
+         
+        </div>
+      </div>
+      <div id="popularItem">
+        <h2>Your Recently Viewed Items</h2>
+        <div class="popular-row">
+          <div class="popularPic">
+            <div>
+              <img
+                src="https://m.media-amazon.com/images/I/71vFk0y2kKL._AC_SX255_.jpg"
+                alt=""
+              />
+            </div>
+            <button
+              type="button"
+              class="love"
+            >
+              <span>64</span>
+            </button>
+            <h3>Crocs Kids</h3>
+            <h4>Classic Clog (Little Kid/Big..</h4>
+            <h5>$39.95</h5>
+          </div>
+          <div class="popularPic">
+            <div>
+              <img
+                src="https://m.media-amazon.com/images/I/61w53CqCECL._AC_SX255_.jpg"
+                alt=""
+              />
+            </div>
+            <button
+              type="button"
+              class="love">
+              <span>117</span>
+            </button>
+            <h3>Crocs Kids</h3>
+            <h4>Classic Clog (Little Kid/Big..</h4>
+            <h5>$39.95</h5>
+          </div>
+          <div class="popularPic">
+            <div>
+              <img
+                src="https://m.media-amazon.com/images/I/812V325j9oL._AC_SX255_.jpg"
+                alt=""
+              />
+            </div>
+            <button
+              type="button"
+              class="love"
+            >
+              <span>43</span>
+            </button>
+            <h3>Crocs Kids</h3>
+            <h4>Classic Clog (Little Kid/Big..</h4>
+            <h5>$39.95</h5>
+          </div>
+          <div class="popularPic">
+            <div>
+              <img
+                src="https://m.media-amazon.com/images/I/61pm3BQfM3L._AC_SX255_.jpg"
+                alt=""
+              />
+            </div>
+            <button
+              type="button"
+              class="love"
+            >
+              <span>86</span>
+            </button>
+            <h3>adidas</h3>
+            <h4>Adilette Comfort Slides</h4>
+            <h5>$39.95</h5>
+          </div>
+          <div class="popularPic">
+            <div>
+              <img
+                src="https://m.media-amazon.com/images/I/81XYFewfV3L._AC_SX255_.jpg"
+                alt=""
+              />
+            </div>
+            <button
+              type="button"
+              class="love"
+            >
+              <span>64</span>
+            </button>
+            <h3>LifeStride</h3>
+            <h4>Yolo</h4>
+            <h5>$69.94</h5>
+          </div>
+          <div class="popularPic">
+            <div>
+              <img
+                src="https://m.media-amazon.com/images/I/51kAN4SOJML._AC_SX255_.jpg"
+                alt=""
+              />
+            </div>
+            <button
+              type="button"
+              class="love"
+            >
+              <span>862</span>
+            </button>
+            <h3>adidas</h3>
+            <h4>Adilette Aqua Slides</h4>
+            <h5 style="color: rgb(208, 0, 0)">
+              $22.49
+              <span style="color: grey; font-size: 12px"> MSRP: $25.00</span>
+            </h5>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="footer"></div>
+  </body>
+  <script src="cart.js"></script>
+</html>
