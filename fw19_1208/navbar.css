@@ -130,6 +130,10 @@
     border: 1px #f1f1f1;
 }
 
+#search_btn:hover{
+   background-color: #2980B9;
+}
+
 #s3_p2_navbar{
     display: flex;
     align-items: center;
@@ -156,4 +160,8 @@
 #s4_navbar .dropbtn {
     background-color: #f4f4f4;
     color: #003953;
+}
+
+#dp_list_women{
+    display: flex;
 }
