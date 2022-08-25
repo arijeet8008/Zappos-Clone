@@ -201,3 +201,8 @@
 #dp_search_bar button:hover{
    background-color: #2980B9;
 }
+
+#s4_p2_navbar{
+    display: flex;
+    align-items: center;
+}
