@@ -546,36 +546,73 @@ let featured = [
   "Moral Code",
 ]
 
-let women_cat = "dp_list_women"
+let women_cat = "dp_list_women";
+let new_cat = "dp_list_new";
+let men_cat = "dp_list_men";
+let kids_cat = "dp_list_kids";
+let dept_cat = "dp_list_dept";
+let brand_cat = "dp_list_brands";
+let sale_cat = "dp_list_sale";
+let clothing_cat = "dp_list_clothing";
 
 let append_shoes = () =>{
-  let cont=women_cat
   let item = shoes
-  append(item,cont)
+  append(item,women_cat)
+  append(item,new_cat)
+  append(item,men_cat)
+  append(item,kids_cat)
+  append(item,dept_cat)
+  append(item,brand_cat)
+  append(item,sale_cat)
+  append(item,clothing_cat)
 }
 
 let append_clothing = ()=>{
-  let cont=women_cat
   let item = clothing
-  append(item,cont)
+  append(item,women_cat)
+  append(item,new_cat)
+  append(item,men_cat)
+  append(item,kids_cat)
+  append(item,dept_cat)
+  append(item,brand_cat)
+  append(item,sale_cat)
+  append(item,clothing_cat)
 }
 
 let append_acc = ()=>{
-  let cont=women_cat
   let item = accessories
-  append(item,cont)
+  append(item,women_cat)
+  append(item,new_cat)
+  append(item,men_cat)
+  append(item,kids_cat)
+  append(item,dept_cat)
+  append(item,brand_cat)
+  append(item,sale_cat)
+  append(item,clothing_cat)
 }
 
 let append_gifts = ()=>{
-  let cont= women_cat
   let item = gift_cards
-  append(item,cont)
+  append(item,women_cat)
+  append(item,new_cat)
+  append(item,men_cat)
+  append(item,kids_cat)
+  append(item,dept_cat)
+  append(item,brand_cat)
+  append(item,sale_cat)
+  append(item,clothing_cat)
 }
 
 let append_featured = ()=>{
-  let cont= women_cat
   let item = featured
-  append(item,cont)
+  append(item,women_cat)
+  append(item,new_cat)
+  append(item,men_cat)
+  append(item,kids_cat)
+  append(item,dept_cat)
+  append(item,brand_cat)
+  append(item,sale_cat)
+  append(item,clothing_cat)
 }
 
 let append = (item,cont_item) =>{
