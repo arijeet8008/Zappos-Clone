@@ -5,7 +5,7 @@
 
 #navbar{
     width: 95%;
-    border: 1px solid red;
+    /* border: 1px solid red; */
     margin: auto;
 }
 #s1_navbar{
@@ -81,7 +81,6 @@
     position: absolute;
     background-color: white;
     min-width: 160px;
-    /* max-width: 100%; */
     overflow: auto;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;

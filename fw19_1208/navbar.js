@@ -1,3 +1,5 @@
+
+
 function myFunction() {
   document.getElementById("myDropdown").classList.toggle("show");
   // Close the dropdown if the user clicks outside of it
@@ -235,7 +237,6 @@ let brand_cat = "dp_list_brands";
 let sale_cat = "dp_list_sale";
 let clothing_cat = "dp_list_clothing";
 
-
 let append_shoes = () =>{
   let item = shoes
   append(item,women_cat)
@@ -297,8 +298,7 @@ let append_featured = ()=>{
 }
 
 let append = (item,cont_item) =>{
-  let cont = document.getElementById(`${cont_item}`);
-  
+  let cont = document.getElementById(cont_item);
 
   let div = document.createElement("div");
   // div.setAttribute("class","shoes")
@@ -322,3 +322,11 @@ append_gifts()
 append_featured()
 
 // export {new_d1,women_d2,men_d3,kids_d4,dept_d5,brands_d6,sale_d7,clothing_d8}
+// export { append_shoes,append_clothing,append_acc,append_gifts,append_featured}
+
+// // let search_item = () => {
+
+// //   let query = document.getElementById
+    
+
+// // }
