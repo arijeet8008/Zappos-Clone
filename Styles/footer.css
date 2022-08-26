@@ -4,7 +4,7 @@
 }
 
 #footer {
-    border: 1px solid red;
+    /* border: 1px solid red; */
     width: 95%;
     margin: auto;
     font: 400 14px Open Sans, sans-serif;
@@ -18,7 +18,6 @@
     font: 400 14px Open Sans, sans-serif;
     /* border: 2px solid orange; */
     border-bottom: #003953;
-
 }
 
 #footer_s1 h3 ,label{
