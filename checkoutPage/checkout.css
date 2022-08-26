@@ -105,7 +105,16 @@ body {
     font: 400 16px Open Sans, sans-serif;
     padding: 8px 38px 8px 12px;
   }
-  
+  .payment input{
+    width: 90%;
+    appearance: none;
+    border: 2px solid #ddd;
+    border-radius: 4px;
+    background-color: #fff;
+    color: #000;
+    font: 400 16px Open Sans, sans-serif;
+    padding: 8px 38px 8px 12px;
+  }
   .form-class p {
     display: block;
     margin-bottom: 4px;
@@ -134,6 +143,27 @@ body {
     user-select: none;
     background: #003953;
     color: #fff;
+    border: 2px solid #003953;
+    margin-top: 10px;
+    
+  }
+  .payment-btn2{
+    font: 700 14px/120% Open Sans, sans-serif;
+    text-transform: uppercase;
+    text-decoration: none;
+    border-radius: 4px;
+    padding: 12px 24px;
+    cursor: pointer;
+    touch-action: manipulation;
+    text-align: center;
+    transition: all 0.3s ease 0s;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    -moz-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+    background: #f5f5f5;
+    color: #003953;
     border: 2px solid #003953;
     margin-top: 10px;
     
