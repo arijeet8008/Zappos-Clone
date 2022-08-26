@@ -7,35 +7,17 @@
     <title>Document</title>
     <link rel="stylesheet" href="./footer.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
 </head>
 <body>
-    <div id="footer">
-        <div id="footer_s1">
-            <h3>Make Zappos(Emails)Your New BFF!</h3>
-            <label for="">Email</label><br>
-            <input type="text" placeholder="Enter Email Address"/>
-            <button><i class="fa fa-envelope"></i> SUBSCRIBE TO ZAPPOS EMAILS</button>
-        </div>
-        <div id="footer_s2">
-          <div id="f1">
-            <h3>Explore Zappos</h3>
-            <a href="">Brands</a> 
-            <a href="">Clothing</a> 
-            <a href="">The Style Room</a> 
-            <a href="">Eyewear</a> 
-            <a href="">New Arrivals</a>
-            <a href="">Running</a> 
-            <a href="">Jackets</a> 
-            <a href="">Shoes</a> 
-            <a href="">Watches</a> 
-            <a href="">Zappos Adaptive</a> 
-            <a href="">Education & Military Discounts</a> 
-            <a href="">All Departments</a> 
-          </div>  
-        </div>
-        <div id="footer_s3">
-
-        </div>
-    </div>
+  <div id="footer_cont"></div>
 </body>
+
 </html>
+<script type="module">
+  import footer from "./footer_import.js"
+  
+  let cont = document.getElementById("footer_cont");
+  cont.innerHTML = footer()
+
+</script>
