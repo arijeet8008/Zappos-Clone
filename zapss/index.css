@@ -180,7 +180,7 @@ cursor: pointer;
 }
 
 
-/* new page */
+/* Latest from marrel css */
 
  
 .one{
@@ -307,4 +307,98 @@ height: 300px;
 #btn:hover{
 background-color: black;
 color: white;
+}
+
+
+
+
+
+
+.frstcls{
+    width: 100%;
+    height: 600px;
+    position: relative;
+    /* margin-top: 300px; */
+/* display: flex; */
+}
+.frstcls>img{
+    width: 100%;
+    height: 100%;
+}
+.frstcls>button{
+    position: absolute;
+    top: 20%;
+   width: 50px;
+   height: 50px;
+}
+.frstcls>button:nth-child(3){
+    /* background-color: transparent; */
+    background-color: rgba(84, 179, 200);
+    left: 10px;
+    padding: 7px;
+    border-radius: 100%;
+    color: rgb(61, 100, 230);
+    border: 0px;
+    font-size: 25px;
+    font-weight: bold;
+}
+.frstcls>button:nth-child(4){
+    background-color: rgba(84, 179, 200);
+    right: 10px;
+    /* background-color: transparent; */
+    padding: 7px;
+    border-radius: 50px;
+    color:  rgba(31, 33, 34);
+    border: 0px;
+    font-size: 25px;
+    font-weight: bold;
+}
+#firstdiv{
+display:  flex;
+grid-template-columns: repeat(6,1fr);
+gap: 10px;
+/* border: 2px solid black; */
+box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+margin-top: 5%;
+}
+#firstdiv>div{
+width: 17%;
+/* border: 2px solid black; */
+box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+/* height: 450px; */
+line-height: 10px;
+padding: 1%;
+padding-bottom: 2%;
+}
+#seconddiv{
+display:  flex;
+grid-template-columns: repeat(6,1fr);
+gap: 10px;
+/* border: 2px solid black; */
+box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+display: none;
+margin-top: 5%;
+}
+#seconddiv>div{
+width: 17%;
+/* border: 2px solid black; */
+box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+line-height: 10px;
+padding-bottom: 2%;
+padding: 1%;
+}
+#firstdiv>div>img{
+    width: 100%;
+    height: 200px;
+}
+.axy{
+text-decoration: none;
+font-size: 12px;
+}
+.axy:hover{
+text-decoration: underline;
+}
+#seconddiv>div>img{
+    width: 100%;
+    height: 200px;
 }
