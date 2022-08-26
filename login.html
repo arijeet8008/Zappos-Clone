@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login</title>
+    <style>
+        #start{
+            width:50%;
+            height:330px;
+            border: 1px solid rgb(233, 233, 233);
+            margin: auto;
+        }
+        #start>img{
+            width:15%;
+            margin-top: 3%;
+            margin-left: 40%;
+        }
+        #log{
+            width:40%;
+            height:250px;
+            /* border: 1px solid gray; */
+            margin: auto;
+        }
+        #log>form>h3{
+            margin-left: 5%;
+            font-family: sans-serif;
+        }
+        #log>form>h5{
+            margin-left: 5%;
+            font-family: sans-serif;
+            
+        }
+        .form>input{
+            
+            margin-left: 5%;
+           width: 85%;
+           margin-top: 2px;
+      }
+      .form>label{
+        font-family: sans-serif;
+        font-size: 12px;
+        color: black;
+        padding: 10px;
+        margin-bottom: 10px;
+      }
+      button {
+        width: 90%;
+        height: 20px;
+        /* padding: 9px ; */
+        border-radius: 7px;
+        border: none;
+        background-color: #0d2546;
+        color: white;
+        font-weight: 600;
+        margin-left: 12px;
+        margin-top: 4%;
+      }
+      .form>h4{
+        font-family: sans-serif;
+        font-size: 12px;
+        text-align: center;
+      }
+      .form{
+        border: 1px solid gray;
+        height:250px;
+        width: 100%;
+        border-radius: 2px;
+      }
+      #see{
+        width:90%;
+        height: 20px;
+        border: 1.2px solid black;
+        margin-left: 12px;
+        border-radius: 2px;
+      }
+      #see>a{
+        font-family: sans-serif;
+        font-size: 10px;
+        text-align: center;
+        margin-top: -10px;
+        color: rgb(25, 25, 54);
+        text-decoration: none;
+        margin-left: 17%;
+        font-weight: bold;
+
+      }
+      #submit{
+        background-color: #0d2546;
+        color: white;
+        margin-left: 5%;
+        width:88%;
+        border-radius: 4px;
+        margin-top: 4%;
+      }
+      #remember {
+        width: 20px;
+        margin-top: 2%;
+        margin-left: 10%;
+
+      }
+      #tick{
+        margin-right: 2%;
+      }
+    </style>
+</head>
+<body>
+    <div id="start">
+        <img src="https://m.media-amazon.com/images/G/01/zappos/melody/zapposPBS._CB1509642213_.svg"/>
+        <div id="log">
+            <form class="form">    
+                <h3>Sign-In</h3>
+                <label for="email">Email</label><br>
+                <input type="email" id="email" >
+                <label for="password">Password</label><br>
+                <input type="password" id="password" >
+                <input type="submit" id="submit" value="Sign-In">
+                <h4>New to Zappos?</h4>
+                <div id=see>
+                    <a href="signup.html">Create your Zappos account</a>
+                </div>
+            </form> 
+        </div>
+    </div>
+</body>
+</html>
+<script>
+ document.querySelector("form").addEventListener("submit",signin);
+let Arrdata=JSON.parse(localStorage.getItem("userData")) || [];
+
+function signin()
+{
+    event.preventDefault();
+
+    let obj={
+            email:document.querySelector("#email").value,
+            password:document.querySelector("#password").value,
+    }
+    if(obj.email.length===0 && obj.password.length===0){
+        alert("Filled Empty");
+        return ;
+    }
+    else if(checkSignin(obj.email,obj.password)==true){
+     
+        alert("login Successfully");
+        window.location.href="index.html";
+        localStorage.setItem("login",JSON.stringify(true));
+    }
+    else{
+        alert("Wrong username or password");
+        localStorage.setItem("login",JSON.stringify(false));
+    }
+}
+function checkSignin(email,password){
+    let filtered=Arrdata.filter(function(elem){
+        return elem.email===email && elem.password===password;
+    })
+    if(filtered.length>0){
+    
+        return true;
+             
+    }
+    
+  else{
+        return false;
+    }
+}
+
+
+</script>   
