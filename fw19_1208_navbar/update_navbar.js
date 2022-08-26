@@ -233,12 +233,18 @@ let append = (item, cont_item) => {
         let a = document.createElement("a");
         a.innerHTML = item[i];
         a.href = arr[i]
+        if(i===0){
+            // a.setAttribute("class","title")
+            a.style.fontWeight = 600
+            a.style.fontSize = "16px"
+            a.style.lineHeight = "normal"
+        }
         div.append(a);
         // console.log(item[i]);
     }
 
     cont.append(div)
-    return cont
+    // return cont
     
 }
   
