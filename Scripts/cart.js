@@ -168,3 +168,5 @@ document.querySelector(".chek-btn").addEventListener("click", function () {
   localStorage.setItem("totalCartPrice", val);
   window.location.href = "./checkout.html";
 });
+
+localStorage.setItem("count_items",JSON.stringify(cartData.length))
