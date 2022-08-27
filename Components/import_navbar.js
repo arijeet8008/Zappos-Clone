@@ -1,7 +1,7 @@
 
 let navbar = () => {
 
-    return ` <div id="navbar">
+    return ` <div id="navbar_import">
     <div id="s1_navbar">
         <div id="s1_p1_navbar"><img src="https://m.media-amazon.com/images/G/01/zappos/melody/black-logo.png" alt="Zappos"></div>
         <div id="s1_p2_navbar"><img src="https://m.media-amazon.com/images/G/01/vrsnl/vrsnl-logo._CB1564076501_.png" alt=""></div>   
