@@ -1,12 +1,15 @@
 body {
     margin: 0;
     padding: 0;
-    width: 100%;
+    
   }
   #cart-page {
     font-family: Family "Open Sans", sans-serif;
     color: #1f1f1f;
     margin-top: 28px;
+    /* border: 1px solid red; */
+    width: 95%;
+    margin: auto;
   }
   
   .top-bar {

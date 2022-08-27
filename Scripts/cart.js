@@ -2,6 +2,7 @@
 let cartData = JSON.parse(localStorage.getItem("cart")) || [];
 let tbody = document.querySelector(".tbody");
 
+console.log(cartData);
 
 let totalQuantity = 0;
 let totalPrice = 0;
