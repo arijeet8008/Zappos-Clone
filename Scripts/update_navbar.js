@@ -268,9 +268,16 @@ let search = () =>{
     }
     console.log(query);
 }
-  
+
+let login_data = JSON.parse(localStorage.getItem("login"));
+
 let cart = ()=>{
-    window.location.href = "cart.html"
+    if(login_data){
+       window.location.href = "cart.html" 
+    }
+    else{
+        alert("Log in First")
+    }
 }
 
  
