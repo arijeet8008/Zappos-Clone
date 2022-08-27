@@ -29,9 +29,9 @@ let navbar = () => {
                 <button id="search_btn" onclick="search()" >SEARCH</button>
             </div>
         </div>
-        <div id="s3_p2_navbar">
+        <div id="s3_p2_navbar" onclick = "cart()">
             <div id="cart_logo"><img src="https://cdn-icons-png.flaticon.com/512/4296/4296929.png" alt=""></div>
-            <div id="items_count" onclick = "cart()">My Cart</div>
+            <div id="count_item">My Cart</div>
         </div> 
     </div>
     <div id="s4_navbar">

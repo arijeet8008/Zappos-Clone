@@ -283,18 +283,22 @@ let search = () =>{
 
 let login_data = JSON.parse(localStorage.getItem("login"));
 
+
+// console.log(count_div);
+// // if(login_data){
+//     count_div.append ="y"
+// }
+let count = JSON.parse(localStorage.getItem("count_items"))
+
+//  let count_div = document.getElementById("count_item") 
 let cart = ()=>{
     if(login_data){
        window.location.href = "cart.html" 
+       
     }
     else{
         alert("Log in First")
     }
 }
 
-// if(login_data){
-
-// }
-
- 
   
