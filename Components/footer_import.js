@@ -1,7 +1,7 @@
 
 let footer = () =>{
 
-    return `    <div id="footer">
+    return `    <div id="footer_import">
     <div id="footer_s1">
         <h3>Make Zappos(Emails)Your New BFF!</h3>
         <label for="">Email</label><br>
