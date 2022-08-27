@@ -1,6 +1,7 @@
 
-let cartData = JSON.parse(localStorage.getItem("addToCartItems")) || [];
+let cartData = JSON.parse(localStorage.getItem("cart")) || [];
 let tbody = document.querySelector(".tbody");
+
 
 let totalQuantity = 0;
 let totalPrice = 0;
@@ -16,14 +17,14 @@ function dataDisplay(data) {
     leftside.className = "leftside";
 
     let img = document.createElement("img");
-    img.setAttribute("src", item.img_url);
+    img.setAttribute("src", item.image);
 
     let div = document.createElement("div");
     let h4 = document.createElement("h4");
     h4.innerText = item.name;
 
     let h3 = document.createElement("h3");
-    h3.innerText = item.sub_name;
+    h3.innerText = item.brand;
 
     let color = document.createElement("p");
     color.innerText = `Color: ${item.color}`;
@@ -113,7 +114,7 @@ function dataDisplay(data) {
 //delete item
 function deleteFunc(item, index, array) {
   array.splice(index, 1);
-  localStorage.setItem("addToCartItems", JSON.stringify(array));
+  localStorage.setItem("cart", JSON.stringify(array));
   window.location.reload();
 }
 
