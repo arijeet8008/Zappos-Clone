@@ -164,5 +164,5 @@ document.querySelector(".chek-btn").addEventListener("click", function () {
   let val = oldPrice[1];
   localStorage.setItem("totalQuantity", totalQuantity) || "0";
   localStorage.setItem("totalCartPrice", val);
-  window.location.href = "../checkoutPage/checkout.html";
+  window.location.href = "./checkout.html";
 });
