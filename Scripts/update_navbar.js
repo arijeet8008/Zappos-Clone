@@ -227,12 +227,24 @@ let append = (item, cont_item) => {
     let cont = document.getElementById(cont_item);
 
     let div = document.createElement("div");
-    let arr = ["https://course.masaischool.com/assignments", "https://www.zappos.com/?tgt=/zap&lt=true"]
+    //let arr = ["wtops.html", "wshoes.html","waccessories.html","womens.html"]
 
     for (let i = 0; i <= 9; i++) {
         let a = document.createElement("a");
         a.innerHTML = item[i];
-        a.href = arr[i]
+        if(item[i]==="Shirts & Tops"){
+           a.href = "wtops.html" 
+        }
+        if(item[i]==="Sneakers & Athletic"){
+            a.href = "wshoes.html" 
+        }
+        if(item[i]==="bags"){
+            a.href = "waccessories.html" 
+        }
+        else{
+            a.href = "womens.html" 
+        }
+
         if(i===0){
             // a.setAttribute("class","title")
             a.style.fontWeight = 600
@@ -279,6 +291,10 @@ let cart = ()=>{
         alert("Log in First")
     }
 }
+
+// if(login_data){
+
+// }
 
  
   
