@@ -1,6 +1,12 @@
 import leftSidebar from "../Components/sidebar.js";
 document.getElementById("left").innerHTML = leftSidebar();
 
+import navbar from "../Components/import_navbar.js";
+document.getElementById("navbarmain").innerHTML = navbar();
+
+import footer from "../Components/footer_import.js";
+document.getElementById("footermain").innerHTML = footer();
+
 let productData = [
   {
     brand: "Sparky",
