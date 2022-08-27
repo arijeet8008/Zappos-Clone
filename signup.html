@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signup</title>
+    <style>
+       #signup{
+        width:80%;
+        /* border: 1px solid red; */
+        margin: auto;
+         }
+         #signup>img{
+            width:40%;
+            height: 40px;
+            margin-left: 30%;
+         }
+        #second{
+            width:25%;
+            height: 400px;
+            border: 1px solid gray;
+            border-radius: 2px;
+            margin: auto;
+        }
+        #second>h2{
+            font-size: 20px;
+            font-family: sans-serif;
+            margin-left: 2%;
+        }
+        #apmain>h4{
+            font-size: 10px;
+            font-family: sans-serif;
+            margin-top: 10px;
+            margin-bottom: 1%;
+            margin-left:5%;
+        }
+        #apmain>input{
+            width: 85%;
+            margin-left: 5%;
+
+        }
+        #submit{
+            background-color: rgb(33, 33, 64);
+            border: 1px solid  rgb(33, 33, 64);
+            margin-top: 10px;
+            height: 25px;
+            width: 100%;
+            margin-left: 10%;
+            color: white;
+            border-radius: 2px;
+        }
+        #apName{
+            margin-top: -15px;
+            height: 15px;
+            width: 100%;
+            margin-left: 5%;
+        }
+        #apEmail{
+            margin-top: -15px;
+            height: 15px;
+            width: 100%;
+            margin-left: 5%;
+        }
+        p{
+        font-size: 10px;
+        font-family: sans-serif;
+           margin-left: 5%;
+         }
+        #tail>h2{
+        font-size: 12px;
+        font-family: sans-serif;
+        margin-top: 5%;
+        margin-left: 5%;
+        }
+        #second{
+            box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+        }
+    </style>
+</head>
+<body>
+    <div id="signup">
+        <img src="https://m.media-amazon.com/images/G/01/zappos/melody/zapposPBS._CB1509642213_.svg"/>
+       
+    </div>
+    <div id="second">
+        <h2>Create account</h2>
+        <form id="apmain">
+            <h4>Your Name</h4>
+            <input type="text" id="name" placeholder="First and last name"/>
+            <h4>Email</h4>
+            <input type="email" id="email" />
+            <h4>Password</h4>
+            <input type="password" required id="password" placeholder="At least 6 characters"/>
+            <h4>Re-enter password</h4>
+            <input type="password" required id="apPassCon" />
+            <input id="submit" type="submit" value="Create your zappos account">
+        </form>
+        <p>Don't have an email address or need additional help?</p>
+        <p>Don't worry! Give us a call at (800) 927-7671</p>
+        <p>By signup up, I accept the Masai School <a href="https://www.zappos.com/terms-of-use"> Terms of service</a> and acknowledge the <a href="https://www.zappos.com/c/privacy-policy"> Privacy policy</a></p>
+          
+        <hr>
+        <div id="tail"><h2>Already have an account? <a href="login.html">Sign-In</a> </h2></div>
+        
+    </div>
+</html>
+<script>
+    document.querySelector("form").addEventListener("submit",signup)
+    Arrdata=JSON.parse(localStorage.getItem("userData")) || [];
+
+    function signup(){
+        event.preventDefault()
+
+        let obj={
+            name:document.querySelector("#name").value,
+            email:document.querySelector("#email").value,
+            password:document.querySelector("#password").value,
+             
+        }
+        
+        if(checkEmail(obj.email)===true){
+            Arrdata.push(obj);
+
+            localStorage.setItem("userData",JSON.stringify(Arrdata));
+            alert("Thank you for sign In");
+            window.location.href="login.html";
+        }
+        else if(obj.name == "" || obj.email=="" || obj.password=="")
+        {
+            alert("Filed Empty");
+            return 
+            Arrdata.push(obj);
+        }
+      
+        else{
+                alert("Account already exist");
+        }
+    }
+
+    function checkEmail(email){
+        let filtered=Arrdata.filter(function(elem){
+            return email===elem.email;
+        })
+        if(filtered.length>0){
+            return false;
+        }else{
+            return true;
+        }
+    }
+</script>
