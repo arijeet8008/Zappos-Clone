@@ -23,7 +23,7 @@ let navbar = () => {
     </div>
     <div id="s3_navbar">
         <div id="s3_p1_navbar">
-            <div id="s3_p1_logo"><a href=""><img src="https://m.media-amazon.com/images/G/01/zappos/melody/zapposPBS._CB1509642213_.png" alt="" height="50"></a></div>
+            <div id="s3_p1_logo"><a href="index.html"><img src="https://m.media-amazon.com/images/G/01/zappos/melody/zapposPBS._CB1509642213_.png" alt="" height="50"></a></div>
             <div id="s3_p1_search_bar">
                 <input type="search" placeholder="&#128270 Search for shoes,clothes,etc" id="search">
                 <button id="search_btn" onclick="search()" >SEARCH</button>
