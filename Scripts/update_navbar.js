@@ -247,8 +247,31 @@ let append = (item, cont_item) => {
     // return cont
     
 }
-  
 
+// document.getElementById("search_btn").addEventListener("click",search)
+
+let search = () =>{
+
+    let query =  document.getElementById("search").value;
+
+    if(query === "dress"){
+        window.location.href = "womens.html"
+    }
+    else if(query === "cloth"){
+        window.location.href = "womens.html"
+    }
+    else if(query === "shoe"){
+        window.location.href = "wshoes.html"
+    }
+    else if(query === "top"){
+        window.location.href = "wtops.html"
+    }
+    console.log(query);
+}
+  
+let cart = ()=>{
+    window.location.href = "cart.html"
+}
 
  
   
