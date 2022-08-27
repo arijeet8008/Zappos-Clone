@@ -106,6 +106,7 @@ margin: auto;
 .subSection > label {
   font-size: x-large;
   font-weight: 700;
+  color: black;
 }
 .subSection > input {
   width: 80%;
