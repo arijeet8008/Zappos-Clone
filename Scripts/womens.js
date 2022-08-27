@@ -383,7 +383,7 @@ let productData = [
 ];
 
 /////////////////////////       Append Data       ////////////////////////////
-
+let count = 0;
 appendProductsData(productData);
 
 function appendProductsData(productData) {
@@ -490,6 +490,9 @@ function appendProductsData(productData) {
       div_ratings.innerText = `⭐⭐⭐(42)`;
       div.append(div_ratings);
     }
+
+    count++ ;
+    document.getElementById("count").innerText = `${count} items found`;
 
     div.append(img, brand, name, price, br1, div_col, div_ratings);
     container.append(div);
