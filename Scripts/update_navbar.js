@@ -288,17 +288,25 @@ let login_data = JSON.parse(localStorage.getItem("login"));
 // // if(login_data){
 //     count_div.append ="y"
 // }
-let count = JSON.parse(localStorage.getItem("count_items"))
+// let count = JSON.parse(localStorage.getItem("count_items"))
 
-//  let count_div = document.getElementById("count_item") 
+// let count_div = document.getElementById("s3_p2_navbar")
+// // console.log(count_div);
+//  let append_count = ()=>{
+//     let p = document.createElement("p");
+//     p.innerText = count
+//     count_div.append(p)
+//  }
+//   append_count()
+
 let cart = ()=>{
     if(login_data){
        window.location.href = "cart.html" 
-       
+      
     }
     else{
         alert("Log in First")
     }
 }
 
-  
+ //<div id="count_item">My Cart</div> 

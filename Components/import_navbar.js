@@ -31,7 +31,7 @@ let navbar = () => {
         </div>
         <div id="s3_p2_navbar" onclick = "cart()">
             <div id="cart_logo"><img src="https://cdn-icons-png.flaticon.com/512/4296/4296929.png" alt=""></div>
-            <div id="count_item">My Cart</div>
+            <p>My Cart</p>
         </div> 
     </div>
     <div id="s4_navbar">
