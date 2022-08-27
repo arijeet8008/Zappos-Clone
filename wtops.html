@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Zappos | Women's Shirts & Tops</title>
+    <link rel="stylesheet" href="./Styles/wtops.css" />
+  </head>
+
+  <body>
+    <!-- *****************     Navbar    **************** -->
+
+    <div id="navbar"></div>
+
+    <!-- *****************    Sorting   **************** -->
+
+    <div id="sort_heading">
+      <div id="cat_title">
+        <h1>Women's Shirts & Tops</h1>
+        <p id="count"></p>
+      </div>
+
+      <div id="sorting">
+        <span>
+          <label for="searchSort">Sort <span> By </span></label>
+          <select class="sortOptions">
+            <option value="sort">Sort Default</option>
+            <option value="brandName">Brand Name</option>
+            <option value="price-asc">Price : Low to High</option>
+            <option value="price-desc">Price : High to Low</option>
+            <option value="reviewRating-asc">
+              Customer Rating : Ascending
+            </option>
+            <option value="reviewRating-desc">
+              Customer Rating : descending
+            </option>
+          </select>
+        </span>
+      </div>
+    </div>
+
+    <!-- ##################     Main Body      ##################### -->
+
+    <div id="parent">
+      <!-- *****************     leftSide menuBar    **************** -->
+
+      <div id="left"></div>
+
+      <!-- *****************     Right Products Data    **************** -->
+
+      <div id="right">
+        <div id="searchSelected" class="searchSelected">
+          <h2>Your Selections</h2>
+
+          <ul id="searchSelectedFilters">
+            <li><a href="">Clothing</a></li>
+            <li><a href="">Shirts &amp; Tops</a></li>
+            <li><a href="">Red</a></li>
+            <li><a href="">Women</a></li>
+            <li><a href="">Long Sleeve</a></li>
+            <li><a href="">Dress</a></li>
+            <li class="searchSelectedList"><button>Short Sleeve</button></li>
+            <li class="searchSelectedList"><button>Green</button></li>
+            <li class="searchSelectedList"><button>Burgundy</button></li>
+            <li class="searchSelectedList"><button>Pink</button></li>
+            <li class="searchSelectedList"><button>Solid</button></li>
+            <li class="searchSelectedList"><button>3/4 Sleeve</button></li>
+            <li class="searchSelectedList"><button>Sleeveless</button></li>
+            <li class="searchSelectedList"><button>White</button></li>
+            <li class="searchSelectedList"><button>Black</button></li>
+          </ul>
+        </div>
+
+        <!-- ##################   Append Products      ##################### -->
+
+        <div id="product"></div>
+      </div>
+    </div>
+
+    <!-- *****************     Footer    **************** -->
+
+    <div id="footer"></div>
+  </body>
+</html>
+
+<script src="./Scripts/wtops.js" type="module"></script>

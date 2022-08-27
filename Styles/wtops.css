@@ -34,7 +34,7 @@ body {
   height: 50px;
   font-size: large;
 }
-.sortOptions{
+.sortOptions {
   width: 100%;
 }
 
@@ -109,7 +109,6 @@ li {
   display: block;
 }
 .sections1 {
-
   color: #003953;
   margin-top: 8px;
   padding: 0;
@@ -130,7 +129,7 @@ li {
   border-color: #003953;
 }
 
-.list li{
+.list li {
   border-top: 1px solid #e8e8e8;
   font-weight: 700;
   line-height: 50px;
@@ -138,7 +137,6 @@ li {
 
 .list {
   display: none;
-  
 }
 
 .list li:first-child {
@@ -174,7 +172,6 @@ li {
   line-height: 1.5;
   font: 1.1em sans-serif;
   font-weight: 600;
-
 }
 
 @media (min-width: 769px) {
@@ -218,7 +215,7 @@ li {
     cursor: pointer;
     display: inline-block;
     font: 1.1em sans-serif;
-    font-weight:550;
+    font-weight: 550;
     line-height: 34px;
     text-align: center;
     padding: 0;
@@ -493,7 +490,7 @@ li {
   cursor: pointer;
 }
 
-#searchSelectedFilters > li > a{
+#searchSelectedFilters > li > a {
   font: 1.7em sans-serif;
   font-weight: 700;
 }
@@ -513,9 +510,9 @@ li {
   line-height: 60%;
 }
 
-.cartProductsLists > h2,
 .cartProductsLists > h3 {
-  font-weight: 400;
+  font: 1.3em sans-serif;
+  font-weight: 500;
   color: #003953;
   cursor: pointer;
 }
@@ -657,7 +654,7 @@ select:hover {
   border: 1px solid #6eacc9;
   cursor: pointer;
 }
-#ratings{
+#ratings {
   font-size: larger;
   margin-bottom: 2%;
 }
