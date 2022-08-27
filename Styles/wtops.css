@@ -667,3 +667,46 @@ select:hover {
 }
 
 /* ///////////////////////////////////////////////////////// */
+
+.like{
+  width: 91.5%;
+  position: relative;
+  margin-top: 28px;
+  cursor: pointer;
+
+}
+#likeDiv{
+  display: flex;
+  background-color: #ffffff;
+  justify-content: center;
+  align-items: center;
+  width: 75px;
+  height: 30px;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  text-align: center;
+  padding: 10px 10px;
+  border-bottom-left-radius: 15px;
+}
+#likeDiv:hover{
+  background-color:transparent;
+  color: white;
+}
+
+#likeDiv > b{
+  width: 50%;
+  font-size: x-large;
+  margin-top: 0%;
+  margin-right: 10%;
+  text-align: center;
+  align-items: center;
+}
+#likeDiv > b:hover{
+  width: 50%;
+  font-size: xx-large;
+  margin-top: 0%;
+  margin-right: 10%;
+  text-align: center;
+  align-items: center;
+}
