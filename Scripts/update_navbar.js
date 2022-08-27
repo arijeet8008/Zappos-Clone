@@ -227,12 +227,24 @@ let append = (item, cont_item) => {
     let cont = document.getElementById(cont_item);
 
     let div = document.createElement("div");
-    let arr = ["https://course.masaischool.com/assignments", "https://www.zappos.com/?tgt=/zap&lt=true"]
+    //let arr = ["wtops.html", "wshoes.html","waccessories.html","womens.html"]
 
     for (let i = 0; i <= 9; i++) {
         let a = document.createElement("a");
         a.innerHTML = item[i];
-        a.href = arr[i]
+        if(item[i]==="Shirts & Tops"){
+           a.href = "wtops.html" 
+        }
+        if(item[i]==="Sneakers & Athletic"){
+            a.href = "wshoes.html" 
+        }
+        if(item[i]==="bags"){
+            a.href = "waccessories.html" 
+        }
+        else{
+            a.href = "womens.html" 
+        }
+
         if(i===0){
             // a.setAttribute("class","title")
             a.style.fontWeight = 600
@@ -247,8 +259,54 @@ let append = (item, cont_item) => {
     // return cont
     
 }
-  
+
+// document.getElementById("search_btn").addEventListener("click",search)
+
+let search = () =>{
+
+    let query =  document.getElementById("search").value;
+
+    if(query === "dress"){
+        window.location.href = "womens.html"
+    }
+    else if(query === "cloth"){
+        window.location.href = "womens.html"
+    }
+    else if(query === "shoe"){
+        window.location.href = "wshoes.html"
+    }
+    else if(query === "top"){
+        window.location.href = "wtops.html"
+    }
+    console.log(query);
+}
+
+let login_data = JSON.parse(localStorage.getItem("login"));
 
 
- 
-  
+// console.log(count_div);
+// // if(login_data){
+//     count_div.append ="y"
+// }
+// let count = JSON.parse(localStorage.getItem("count_items"))
+
+// let count_div = document.getElementById("s3_p2_navbar")
+// // console.log(count_div);
+//  let append_count = ()=>{
+//     let p = document.createElement("p");
+//     p.innerText = count
+//     count_div.append(p)
+//  }
+//   append_count()
+
+let cart = ()=>{
+    if(login_data){
+       window.location.href = "cart.html" 
+      
+    }
+    else{
+        alert("Log in First")
+    }
+}
+
+ //<div id="count_item">My Cart</div> 
