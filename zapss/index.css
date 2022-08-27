@@ -210,7 +210,7 @@ width: 100%;
 /* margin-left: 40px;  */
 /* border: 1px solid; */
 width: 95%;
-height: 45%;
+height: 43%;
 }
 .rs{
 margin-top: 10px;
@@ -234,19 +234,22 @@ width: 90%;
 /* border: 3px solid violet; */
 gap: 5px;
 }
-/* 
-.b{
-margin-top: -50px;
-} */
-.ax{
+ 
+ .b{
+margin-bottom: 10px;
+} 
+/* .ax{
 text-decoration: none;
-/* color: black; */
-}  
+font-size: 12px;
+} 
+.ax:hover{
+  text-decoration: underline;
+}  */
 
 /* div{
 
 } */
-
+/* css for back to campus collection */
 #puma{
     /* border: 1px solid red; */
     width: 100%;
@@ -312,13 +315,13 @@ color: white;
 
 
 
-
+/* css for popular item */
 
 .frstcls{
     width: 100%;
     height: 600px;
     position: relative;
-    /* margin-top: 300px; */
+     /* margin-bott: 300px;  */
 /* display: flex; */
 }
 .frstcls>img{
@@ -359,7 +362,7 @@ grid-template-columns: repeat(6,1fr);
 gap: 10px;
 /* border: 2px solid black; */
 box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-margin-top: 5%;
+margin-bottom: 10%;
 }
 #firstdiv>div{
 width: 17%;
@@ -402,3 +405,160 @@ text-decoration: underline;
     width: 100%;
     height: 200px;
 }
+
+
+/*  css Shop Sale Categories */
+
+#sneaker{
+  width: 100%;
+  height: 45px;
+  margin-top: 50px;
+  gap:10px;
+}
+#sneaker>h2{
+  color:#1f1f1f;
+  font:600 24px  open Sans,open sans-serif;
+  margin-left: 40px;
+}
+
+
+#big_div{
+  width: 100%;
+  height: 450px;
+  display: flex;
+  /* padding: 20px; */
+  /* border: 2px solid; */
+ 
+}
+#big_img{
+ /* border: 1px solid blue; */
+width: 80%;
+
+}
+#content_right{
+margin: auto;
+}
+#content_right>img{
+width: 100%;
+}
+.content_left{
+  /* border:2px solid blue; */
+  margin: 10px;
+
+ 
+}
+.content_left h2{
+  color: #000000;
+  font-size: 20px;
+  font:600 20px Open Sans,sans-serif;
+  margin-bottom: 12px;
+}
+.content_left>p{
+  
+  color: #1f1f1f;
+  
+    line-height: 1.5;
+    font: 400 18px Open Sans,sans-serif;
+    margin-bottom: 16px;
+    max-width: 100%;
+}
+
+.wg-z{
+  align-items: flex-start;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: -12px;
+    width: 100%;
+    justify-content: center;
+    
+}
+.xg-z {
+  background: transparent;
+  /* border: 2px solid #1f1f1f; */
+  border-radius: 4px;
+  color: #003953;
+  color: #1f1f1f;
+  cursor: pointer;
+  font: 700 14px/120% Open Sans,sans-serif;
+  padding: 12px 24px;
+  text-align: center;
+  text-decoration: none;
+}
+.xg-z:hover{
+  color: white;
+    text-decoration: none;
+    background-color: black;
+}
+
+
+
+/* css trending----- */
+.box{
+  /* border: 1px solid green; */
+  width:90%;
+  height:550px;
+  margin:auto;
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  grid-template-rows: repeat(1,1fr);
+  gap: 30px;
+  }
+  .dd{
+  width:100%;
+  height:550px;
+  /* border: 1px solid green; */
+  display: grid;
+  }
+  .pic{
+  width:100%;
+  /* border: 1 px solid red; */
+  height: 100%; 
+  }
+  img{
+  width:100%;
+  }
+  .content{
+  /* border: 1px solid black; */
+  width:100%;
+  height:80px;
+  
+  text-align: center;
+  line-height: 20px;
+  
+  }
+  .content h3{
+  
+  color: #1f1f1f;
+  font: 600 18px Open Sans,sans-serif;
+  cursor: pointer;
+  }
+  
+  .bb{
+  
+  color: #1f1f1f;
+  line-height: 1.5;
+  font: 400 14px Open Sans,sans-serif;
+  /* margin-bottom: 16px; */
+  cursor: pointer;
+  }
+  
+  .aa{
+  /* border-bottom: 1px solid #003953; */
+  color: #003953;
+  display: inline-block;
+  font-size: 100%;
+  font: 700 14px Open Sans,sans-serif;
+  text-decoration: none;
+  text-transform: uppercase;
+  margin-top: 5px;
+  cursor: pointer;
+  }
+  .zyw{
+    text-decoration: none;
+    font-size:  14px Open Sans,sans-serif;
+  }
+  .zyw:hover{
+    text-decoration: underline;
+  }
+  
+  
