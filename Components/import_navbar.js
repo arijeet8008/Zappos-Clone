@@ -118,7 +118,7 @@ let navbar = () => {
             </div>
         </div>
         <div id="s4_p2_navbar">
-            <a href="">Favorites</a>
+            <a href="favorites.html">Favorites</a>
              <a href="./login.html">Sign in/up</a>   
         </div>
     </div>
