@@ -17,7 +17,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   </head>
   <body>
-    <div id="header"></div>
+    <div id="navbar"></div>
     <div id="cart-page">
       <div class="top-bar">
         <p>
@@ -293,13 +293,26 @@
     </div>
     <div id="footer"></div>
   </body>
+  <script src="./Scripts/cart.js"></script>
+  <script type="module">
+    import navbar from "./Components/import_navbar.js"
+    
+    let data_cont = document.getElementById("navbar");
+    data_cont.innerHTML= navbar()  
+    
+  </script>
+  
+  <script src="./Scripts/update_navbar.js"></script>
+
+  <script type="module">
+    import footer from "./Components/footer_import.js"
+    
+    let cont = document.getElementById("footer");
+    cont.innerHTML = footer()
+  
+  </script>
+
  </html>
 
-
- <!-- <script type="module">
-  import footer from "./Components/footer_import.js"
-  
-  let cont = document.getElementById("footer");
-  cont.innerHTML = footer()
 
 
