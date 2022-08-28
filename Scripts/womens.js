@@ -390,6 +390,8 @@ let productData = [
 
 /////////////////////////       Append Data       ////////////////////////////
 let count = 0;
+let likedcount = JSON.parse(localStorage.getItem("likecount")) || 0;
+let productlike = JSON.parse(localStorage.getItem("productlike")) || [];
 appendProductsData(productData);
 
 function appendProductsData(productData) {
@@ -399,6 +401,9 @@ function appendProductsData(productData) {
   productData.forEach(function (elem) {
     let div = document.createElement("div");
     div.className = "cartProductsLists";
+
+    let like = document.createElement("div");
+    like.className = "like";
 
     let img = document.createElement("img");
     img.setAttribute("src", elem.image);
@@ -413,6 +418,29 @@ function appendProductsData(productData) {
       img.setAttribute("src", elem.image);
       img.style.height = "500px";
     });
+
+    let likecount = document.createElement("b");
+    likecount.innerText = likedcount;
+
+    let likeDiv = document.createElement("div");
+    likeDiv.id = "likeDiv";
+    likeDiv.addEventListener("click", function () {
+      likedcount++;
+      likecount.innerText = likedcount;
+
+      if (favorite(elem.id) === true) {
+        productlike.push(elem);
+        localStorage.setItem("productlike", JSON.stringify(productlike));
+      }
+
+      localStorage.setItem("likecount", JSON.stringify(likedcount));
+    });
+
+    let likeImg = document.createElement("b");
+    likeImg.innerText = "❤️";
+
+    likeDiv.append(likeImg, likecount);
+    like.append(img, likeDiv);
 
     let name = document.createElement("h3");
     name.innerText = elem.name;
@@ -500,7 +528,7 @@ function appendProductsData(productData) {
     count++ ;
     document.getElementById("count").innerText = `${count} items found`;
 
-    div.append(img, brand, name, price, br1, div_col, div_ratings);
+    div.append(like, brand, name, price, br1, div_col, div_ratings);
     container.append(div);
   });
 }
