@@ -1,3 +1,9 @@
+import navbar from "../Components/import_navbar.js";
+document.getElementById("navbarmain").innerHTML = navbar();
+
+import footer from "../Components/footer_import.js";
+document.getElementById("footermain").innerHTML = footer();
+
 let productDetail = JSON.parse(localStorage.getItem("products"));
 let details = [];
 details.push(productDetail);
@@ -162,6 +168,21 @@ function appendProductsData(productData) {
       div_ratings.innerText = `⭐⭐⭐(42)`;
     }
 
+    let productInfo = document.createElement("div");
+    productInfo.id = "productInfo";
+
+    let prodTittle = document.createElement("h2");
+    prodTittle.innerText = "Product Information";
+
+    let prodName = document.createElement("h1");
+    prodName.innerText = elem.name;
+
+    let prodDesk = document.createElement("p");
+    prodDesk.innerText =
+      "Sleek and flattering are key in the KAMALIKULTURE by Norma Kamali™ Short Sleeve Crew Neck Shirred Waist Dress. this short sleeve dress is crafted of a soft stretch poly jersey. Fitted design and shirring.  Machine wash, tumble dry.";
+
+      productInfo.append(prodTittle,prodName,prodDesk);
+
     let subTittleDiv = document.createElement("div");
     subTittleDiv.setAttribute("id", "subTittleDiv");
     subTittleDiv.append(
@@ -174,7 +195,8 @@ function appendProductsData(productData) {
       div_ratings,
       sizeText,
       sizeDiv,
-      button
+      button,
+      productInfo
     );
 
     if (recentViewData(elem.productID) === true) {

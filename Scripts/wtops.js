@@ -685,7 +685,8 @@ let productData = [
 
 /////////////////////////       Append Data       ////////////////////////////
 let count = 0;
-let likedcount = localStorage.getItem("likecount") || 0;
+let likedcount = JSON.parse(localStorage.getItem("likecount")) || 0;
+let productlike = JSON.parse(localStorage.getItem("productlike")) || [];
 
 appendProductsData(productData);
 
@@ -713,29 +714,29 @@ function appendProductsData(productData) {
       img.setAttribute("src", elem.image);
       img.style.height = "500px";
     });
-    
+
     let likecount = document.createElement("b");
-    likecount.innerText =  likedcount;
+    likecount.innerText = likedcount;
 
     let likeDiv = document.createElement("div");
     likeDiv.id = "likeDiv";
-    likeDiv.addEventListener("click", function(element){
-      element.productID ;
+    likeDiv.addEventListener("click", function () {
       likedcount++;
-      likecount.innerText =  likedcount;
+      likecount.innerText = likedcount;
 
-      localStorage.setItem("likecount",JSON.stringify(likedcount))
-    })
+      if (favorite(elem.id) === true) {
+        productlike.push(elem);
+        localStorage.setItem("productlike", JSON.stringify(productlike));
+      }
+
+      localStorage.setItem("likecount", JSON.stringify(likedcount));
+    });
 
     let likeImg = document.createElement("b");
     likeImg.innerText = "❤️";
 
-      
-     
-      likeDiv.append(likeImg,likecount);
-      like.append(img, likeDiv);
-
-    
+    likeDiv.append(likeImg, likecount);
+    like.append(img, likeDiv);
 
     // let name = document.createElement("h3");
     // name.innerText = elem.name;
@@ -827,7 +828,16 @@ function appendProductsData(productData) {
     container.append(div);
   });
 }
+////////////////////////////////////////////////////////////////////////////
 
+function favorite(element) {
+  for (let i = 0; i < productlike.length; i++) {
+    if (productlike[i].id == element) {
+      return false;
+    }
+  }
+  return true;
+}
 /////////////////////////       Sorting       ////////////////////////////
 
 document.querySelector(".sortOptions").addEventListener("change", SortingData);

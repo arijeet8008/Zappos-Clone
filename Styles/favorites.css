@@ -1,0 +1,277 @@
+*{
+    font-family: "Open Sans", sans-serif;
+}
+#belowNavbar {
+    width: 100%;
+    height: 50px;
+    margin: auto;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    background-color: #e5f1f8;
+    color: #003953;
+    margin-bottom: 2%;
+  }
+  #belowNavbar a {
+    color: #1f1f1f;
+  }
+  #heading{
+    width: 95%;
+    margin: auto;
+    margin-bottom: 1%;
+    font: 1.2em sans-serif;
+  }
+#favorites {
+    width: 95%;
+    height: 900px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(50, 1fr);
+    gap: 2%;
+    overflow: scroll;
+    position: relative;
+  }
+  
+  .cartProductsLists {
+    display: flex;
+    flex-direction: column;
+    gap: 3%;
+    width: 100%;
+    height: 720px;
+  }
+  
+  .cartProductsLists > h2{
+    font-weight: 700;
+    color: #003953;
+    cursor: pointer;
+  }
+  .cartProductsLists > h3 {
+    font-weight: 400;
+    color: #003953;
+    cursor: pointer;
+  }
+  .cartProductsLists > h2:hover,
+  .cartProductsLists > h3:hover {
+    color: #0076cc;
+    text-decoration: underline;
+  }
+  #product > div > img {
+    width: 100%;
+  }
+  
+  #product > div > img + p:hover {
+    color: rgb(102, 168, 180);
+    cursor: pointer;
+  }
+  
+  #product > div > img:hover {
+    cursor: pointer;
+  }
+  
+  
+  /* ////////////////    Products Styles   ////////////////// */
+  
+  select {
+    height: 35px;
+    border-radius: 5px;
+    padding: 3px;
+    margin-right: 20px;
+    width: 120px;
+  }
+  select:hover {
+    cursor: pointer;
+  }
+  
+  #colorDiv {
+    width: 100%;
+    height: 8%;
+    margin-top: -7%;
+    margin-bottom: 2%;
+  }
+  
+  #black_color {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: black;
+    margin: 5px;
+  }
+  #black_color:hover {
+    width: 50px;
+    height: 50px;
+    background-color: black;
+    margin: 5px;
+  }
+  
+  #red_color {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: none;
+    background-color: #e04847;
+    margin: 5px;
+  }
+  #red_color:hover {
+    width: 50px;
+    height: 50px;
+    border: none;
+    background-color: #e04847;
+    margin: 5px;
+  }
+  
+  #pink_color {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: none;
+    background-color: pink;
+    margin: 5px;
+  }
+  #pink_color:hover {
+    width: 50px;
+    height: 50px;
+    border: none;
+    background-color: pink;
+    margin: 5px;
+  }
+  #green_color {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: none;
+    background-color: green;
+    margin: 5px;
+  }
+  #green_color:hover {
+    width: 50px;
+    height: 50px;
+    border: none;
+    background-color: green;
+    margin: 5px;
+  }
+  #blue_color {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: none;
+    background-color: rgb(38, 38, 158);
+    margin: 5px;
+  }
+  #blue_color:hover {
+    width: 50px;
+    height: 50px;
+    border: none;
+    background-color: rgb(37, 37, 127);
+    margin: 5px;
+  }
+  #yellow_color {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: none;
+    background-color: rgb(195, 195, 7);
+    margin: 5px;
+  }
+  #yellow_color:hover {
+    width: 50px;
+    height: 50px;
+    border: none;
+    background-color: rgb(188, 188, 5);
+    margin: 5px;
+  }
+  
+  .color:hover {
+    border: 1px solid #6eacc9;
+    cursor: pointer;
+  }
+  #ratings{
+    font-size: larger;
+    margin-bottom: 5%;
+  }
+  
+  @media all and (max-width: 780px) and (min-width: 320px) {
+    #product {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  
+  #likeDiv{
+    display: flex;
+    justify-content: center;
+    gap: 5%;
+    
+  }
+
+  #removefav{
+    width: 30%;
+    padding: 20px;
+    border: none;
+    font: 1.5em sans-serif;
+    font-weight: 700;
+    cursor: pointer;
+  }
+ 
+
+  
+/* ///////////////////////////////////////// */
+
+#recent {
+    width: 90%;
+    margin: auto;
+    display: block;
+    overflow: hidden;
+  }
+  #recent > h1 {
+    margin-top: 5%;
+    margin-left: 2%;
+    margin-bottom: 2%;
+  }
+  #recentView {
+    width: 95%;
+    margin: auto;
+    display: grid;
+    overflow: scroll;
+    position: relative;
+    grid-template-columns: repeat(50, 1fr);
+    gap: 2%;
+  }
+  
+  #recentView::-webkit-scrollbar {
+    -webkit-appearance: none;
+    width: 7px;
+  }
+  
+  #recentView::-webkit-scrollbar-thumb {
+    background-color: none;
+    border-radius: 4px;
+  }
+  
+  .recentClass {
+    cursor: pointer;
+  }
+  .recentClass > h2 {
+    margin-bottom: 4%;
+  }
+  
+  .recentClass > h2,
+  .recentClass > h3 {
+    font-weight: 600;
+    color: #003953;
+    cursor: pointer;
+  }
+  .recentClass:hover {
+    color: #0076cc;
+    text-decoration: underline;
+  }
+  .recentClass > h2:hover,
+  .recentClass > h3:hover {
+    color: #0076cc;
+    text-decoration: underline;
+  }
+  #recentRatings {
+    font-size: x-large;
+  }
+  
