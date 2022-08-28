@@ -72,9 +72,9 @@
     font-weight:bold;
   }
   
-  .dropbtn:hover, .dropbtn:focus {
+  /* .dropbtn:hover, .dropbtn:focus {
     background-color: #2980B9;
-  }
+  } */
    
   .dropdown-content {
     display: none;
