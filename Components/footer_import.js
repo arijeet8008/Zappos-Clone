@@ -6,7 +6,7 @@ let footer = () =>{
         <h3>Make Zappos(Emails)Your New BFF!</h3>
         <label for="">Email</label><br>
         <input type="text" placeholder="Enter Email Address"/>
-        <button><i class="fa fa-envelope"></i> SUBSCRIBE TO ZAPPOS EMAILS</button>
+        <button onclick="subscribe()"><i class="fa fa-envelope"></i> SUBSCRIBE TO ZAPPOS EMAILS</button>
     </div>
     <div id="footer_s2">
       <div id="f1" class="f_list">

@@ -245,12 +245,12 @@ let append = (item, cont_item) => {
         if(item[i]==="Sneakers & Athletic"){
             a.href = "wshoes.html" 
         }
-        if(item[i]==="bags"){
+        if(item[i]==="Bags"){
             a.href = "waccessories.html" 
         }
-        else{
-            a.href = "womens.html" 
-        }
+        // else{
+        //     a.href = "womens.html" 
+        // }
 
         if(i===0){
             // a.setAttribute("class","title")
@@ -276,8 +276,8 @@ let search = () =>{
     if(query === "dress"){
         window.location.href = "womens.html"
     }
-    else if(query === "cloth"){
-        window.location.href = "womens.html"
+    else if(query === "accessories"){
+        window.location.href = "waccessories.html"
     }
     else if(query === "shoe"){
         window.location.href = "wshoes.html"
@@ -317,3 +317,7 @@ let cart = ()=>{
 }
 
  //<div id="count_item">My Cart</div> 
+
+let subscribe = ()=>{
+    alert("Thank you for Subscription")
+}
