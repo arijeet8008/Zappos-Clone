@@ -48,6 +48,7 @@ body {
 
 .top-bar a {
   color: #003953;
+  text-decoration: none;
 }
 
 .top-bar a:hover {
@@ -123,6 +124,7 @@ body {
   font-size: 14px;
   font-weight: 700;
   font-family: "Open Sans", sans-serif;
+  text-decoration: none;
 }
 
 .below-img-text a:hover {
@@ -163,6 +165,7 @@ body {
   font-size: 14px;
   font-weight: 700;
   font-family: "Open Sans", sans-serif;
+  text-decoration: none;
 }
 
 .below-img-text a:hover {
@@ -227,6 +230,7 @@ body {
 
 .rightside a {
   display: block;
+  
 }
 
 .table-action {
@@ -449,6 +453,10 @@ body {
   width: 94%;
   margin: auto;
   margin-top: 50px;
+}
+
+.popular-row a{
+  text-decoration: none;
 }
 
 .popular-categories>h1 {
