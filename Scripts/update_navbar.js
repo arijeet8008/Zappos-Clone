@@ -96,13 +96,13 @@ let clothing_cat = "dp_list_clothing";
 function new_d1() {
     let menuContent = document.getElementById("myDropdown-1");
     
-    if (menuContent.style.display === "") {
-        menuContent.style.display = "block";
+    if (menuContent.style.display === "block") {
+        menuContent.style.display = "none";
         
     } else {
-        menuContent.style.display = "";
+        menuContent.style.display = "block";
         // menuContent.innerHTML =null
-        window.location.reload();  
+        // window.location.reload();  
     }
     append(shoes, new_cat)
     append(clothing, new_cat)
@@ -119,7 +119,7 @@ function women_d2() {
         menuContent.style.display = "block";
     } else {
         menuContent.style.display = "";
-        window.location.reload(); 
+        // window.location.reload(); 
     }
     append(shoes, women_cat)
     append(clothing, women_cat)
@@ -135,7 +135,7 @@ function men_d3() {
         menuContent.style.display = "block";
     } else {
         menuContent.style.display = "";
-        window.location.reload(); 
+        // window.location.reload(); 
     }
     append(shoes, men_cat)
     append(clothing, men_cat)
@@ -151,7 +151,7 @@ function kids_d4() {
         menuContent.style.display = "block";
     } else {
         menuContent.style.display = "";
-        window.location.reload(); 
+        // window.location.reload(); 
     }
     append(shoes, kids_cat)
     append(clothing, kids_cat)
@@ -167,7 +167,7 @@ function dept_d5() {
         menuContent.style.display = "block";
     } else {
         menuContent.style.display = "";
-        window.location.reload(); 
+        // window.location.reload(); 
     }
     append(shoes, dept_cat)
     append(clothing, dept_cat)
@@ -183,7 +183,7 @@ function brands_d6() {
         menuContent.style.display = "block";
     } else {
         menuContent.style.display = "";
-        window.location.reload(); 
+        // window.location.reload(); 
     }
     append(shoes, brand_cat)
     append(clothing, brand_cat)
@@ -199,7 +199,7 @@ function sale_d7() {
         menuContent.style.display = "block";
     } else {
         menuContent.style.display = "";
-        window.location.reload(); 
+        // window.location.reload(); 
     }
     append(shoes, sale_cat)
     append(clothing, sale_cat)
@@ -214,7 +214,7 @@ function clothing_d8() {
         menuContent.style.display = "block";
     } else {
         menuContent.style.display = "";
-        window.location.reload(); 
+        // window.location.reload(); 
     }
     append(shoes, clothing_cat)
     append(clothing, clothing_cat)
@@ -222,6 +222,13 @@ function clothing_d8() {
     append(gift_cards, clothing_cat)
     append(featured, clothing_cat)
 }
+
+// window.onclick = function (event) {
+//     if (!event.target.matches('.dropbtn')) {
+//         document.getElementsByClassName('dropdown-content')
+//             .style.display = "none";
+//     }
+// } 
 
 let append = (item, cont_item) => {
     let cont = document.getElementById(cont_item);

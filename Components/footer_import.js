@@ -12,14 +12,14 @@ let footer = () =>{
       <div id="f1" class="f_list">
         <h3>Explore Zappos</h3>
         <a href="">Brands</a> 
-        <a href="">Clothing</a> 
-        <a href="">The Style Room</a> 
+        <a href="womens.html">Clothing</a> 
+        <a href="wtops.html">The Style Room</a> 
         <a href="">Eyewear</a> 
         <!-- <a href="">New Arrivals</a> -->
         <a href="">Running</a> 
         <!-- <a href="">Jackets</a>  -->
-        <a href="">Shoes</a> 
-        <a href="">Watches</a> 
+        <a href="wshoes.html">Shoes</a> 
+        <a href="waccessories.html">Watches</a> 
         <!-- <a href="">Zappos Adaptive</a>  -->
         <a href="">Education & Military Discounts</a> 
         <a href="">All Departments</a> 
