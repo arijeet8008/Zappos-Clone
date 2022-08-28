@@ -530,6 +530,16 @@ function appendProductsData(productData) {
   });
 }
 
+////////////////////////////////////////////////////////////////////////////
+
+function favorite(element) {
+  for (let i = 0; i < productlike.length; i++) {
+    if (productlike[i].id == element) {
+      return false;
+    }
+  }
+  return true;
+}
 /////////////////////////       Sorting       ////////////////////////////
 
 document.querySelector(".sortOptions").addEventListener("change", SortingData);
