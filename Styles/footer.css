@@ -5,7 +5,7 @@
 
 #footer_import {
     /* border: 1px solid red; */
-    width: 95%;
+    width: 100%;
     margin: auto;
     font: 400 14px Open Sans, sans-serif;
     background-color: #003953;
@@ -44,6 +44,7 @@
     border-radius: 5px;
     font: 400 14px Open Sans, sans-serif;
     font-weight: 700;
+    cursor: pointer;
 }
 
 #footer_s2 {
@@ -98,6 +99,7 @@
     border-radius: 5px;
     font: 400 14px Open Sans, sans-serif;
     border-color: white;
+    cursor: pointer;
 }
 
 #f3_s2 {

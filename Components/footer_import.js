@@ -6,20 +6,20 @@ let footer = () =>{
         <h3>Make Zappos(Emails)Your New BFF!</h3>
         <label for="">Email</label><br>
         <input type="text" placeholder="Enter Email Address"/>
-        <button><i class="fa fa-envelope"></i> SUBSCRIBE TO ZAPPOS EMAILS</button>
+        <button onclick="subscribe()"><i class="fa fa-envelope"></i> SUBSCRIBE TO ZAPPOS EMAILS</button>
     </div>
     <div id="footer_s2">
       <div id="f1" class="f_list">
         <h3>Explore Zappos</h3>
         <a href="">Brands</a> 
-        <a href="">Clothing</a> 
-        <a href="">The Style Room</a> 
+        <a href="womens.html">Clothing</a> 
+        <a href="wtops.html">The Style Room</a> 
         <a href="">Eyewear</a> 
         <!-- <a href="">New Arrivals</a> -->
         <a href="">Running</a> 
         <!-- <a href="">Jackets</a>  -->
-        <a href="">Shoes</a> 
-        <a href="">Watches</a> 
+        <a href="wshoes.html">Shoes</a> 
+        <a href="waccessories.html">Watches</a> 
         <!-- <a href="">Zappos Adaptive</a>  -->
         <a href="">Education & Military Discounts</a> 
         <a href="">All Departments</a> 

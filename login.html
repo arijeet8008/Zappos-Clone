@@ -131,8 +131,10 @@
  document.querySelector("form").addEventListener("submit",signin);
 let Arrdata=JSON.parse(localStorage.getItem("userData")) || [];
 
+// localStorage.setItem("login",JSON.stringify(false))
 function signin()
 {
+  // localStorage.setItem("login",JSON.stringify(false))
     event.preventDefault();
 
     let obj={
@@ -144,30 +146,31 @@ function signin()
         return ;
     }
     else if(checkSignin(obj.email,obj.password)==true){
-     
+      
         alert("login Successfully");
         window.location.href="index.html";
-        localStorage.setItem("login",JSON.stringify(true));
+        
     }
     else{
         alert("Wrong username or password");
-        localStorage.setItem("login",JSON.stringify(false));
     }
+     
 }
 function checkSignin(email,password){
     let filtered=Arrdata.filter(function(elem){
         return elem.email===email && elem.password===password;
     })
     if(filtered.length>0){
-    
+      localStorage.setItem("login",JSON.stringify(true));
         return true;
              
     }
     
   else{
+    
         return false;
     }
 }
-
+// localStorage.setItem("login",JSON.stringify(false))
 
 </script>   

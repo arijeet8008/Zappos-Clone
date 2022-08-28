@@ -2,6 +2,7 @@
 let cartData = JSON.parse(localStorage.getItem("cart")) || [];
 let tbody = document.querySelector(".tbody");
 
+console.log(cartData);
 
 let totalQuantity = 0;
 let totalPrice = 0;
@@ -167,3 +168,5 @@ document.querySelector(".chek-btn").addEventListener("click", function () {
   localStorage.setItem("totalCartPrice", val);
   window.location.href = "./checkout.html";
 });
+
+localStorage.setItem("count_items",JSON.stringify(cartData.length))

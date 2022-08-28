@@ -255,6 +255,7 @@ body{
   }
 
   .recentClass{
+    cursor: pointer;
     background-color: #f5f5f5;
   }
   .recentClass > h2{
