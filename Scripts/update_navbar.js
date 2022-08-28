@@ -313,11 +313,12 @@ let cart = ()=>{
     }
     else{
         alert("Log in First")
+        window.location.href = "login.html" 
     }
 }
 
  //<div id="count_item">My Cart</div> 
 
 let subscribe = ()=>{
-    alert("Thank you for Subscription")
+    alert("Subscribed Sucessfully")
 }
