@@ -1,549 +1,650 @@
 body {
-    margin: 0;
-    padding: 0;
-    
-  }
-  #cart-page {
-    font-family: Family "Open Sans", sans-serif;
-    color: #1f1f1f;
-    margin-top: 28px;
-    /* border: 1px solid red; */
-    width: 95%;
-    margin: auto;
-  }
-  
-  .top-bar {
-    box-sizing: border-box;
-    color: #1f1f1f;
-    height: 32px;
-    font: 400 14px Open Sans, sans-serif;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #e5f1f8;
-    color: #003953;
-    width: 100%;
-    max-width: 100%;
-    padding: 6px;
-    margin: 0 auto;
-  }
-  .top-bar > p {
-    display: inline-block;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-  }
-  .top-bar > p::before {
-    content: " ";
-    background-repeat: no-repeat;
-    width: 17px;
-    height: 16px;
-    background-position: -150px -280px;
-    margin-right: 5px;
-  }
-  .top-bar a {
-    color: #003953;
-  }
-  .top-bar a:hover {
-    color: #0076bd;
-  }
-  #shipping-privacy {
-    width: 94%;
-    margin: auto;
-  }
-  #shipping-privacy h3 {
-    font-family: "Open Sans", sans-serif;
-    font-size: 14px;
-    font-weight: 700;
-    color: #003953;
-    margin-top: 30px;
-  }
-  #shipping-privacy h3:before {
-    background-repeat: no-repeat;
-    width: 9px;
-    height: 14px;
-    background-position: -25px -35px;
-    content: "";
-    margin-left: -15px;
-    position: absolute;
-  }
-  #shipping-privacy h3:hover {
-    color: #0076bd;
-  }
-  .two-row {
-    display: flex;
-    gap: 20px;
-    width: 100%;
-  }
-  .free-shipping {
-    background-color: #f5f5f5;
-    width: 100%;
-    display: flex;
-    padding: 15px 20px;
-  }
-  .free-shipping > .below-img-text {
-    margin-left: 20px;
-    width: 100%;
-  }
-  .below-img-text > p {
-    margin-top: 0px;
-    font-family: Helvetica, Arial, sans-serif;
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 24px;
-    color: #1f1f1f;
-  }
-  .below-img-text > p + p {
-    font-family: "Open Sans", sans-serif;
-    font-weight: 400;
-    font-size: 12px;
-    color: #1f1f1f;
-    margin-top: -15px;
-    margin-bottom: 10px;
-  }
-  .below-img-text a {
-    color: #003953;
-    font-size: 14px;
-    font-weight: 700;
-    font-family: "Open Sans", sans-serif;
-  }
-  .below-img-text a:hover {
-    color: #0076bd;
-  }
-  .privacy-policy {
-    background-color: #f5f5f5;
-    width: 100%;
-    display: flex;
-    padding: 15px 20px;
-  }
-  .privacy-policy > .below-img-text {
-    margin-left: 20px;
-    width: 100%;
-  }
-  .below-img-text > p {
-    margin-top: 0px;
-    font-family: Helvetica, Arial, sans-serif;
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 24px;
-    color: #1f1f1f;
-  }
-  .below-img-text > p + p {
-    font-family: "Open Sans", sans-serif;
-    font-weight: 400;
-    font-size: 12px;
-    color: #1f1f1f;
-    margin-top: -15px;
-  }
-  .below-img-text a {
-    color: #003953;
-    font-size: 14px;
-    font-weight: 700;
-    font-family: "Open Sans", sans-serif;
-  }
-  .below-img-text a:hover {
-    color: #0076bd;
-  }
-  .table-heading {
-    width: 94%;
-    margin: auto;
-    margin-top: 40px;
-  }
-  .table-heading h1 {
-    font-family: "Open Sans", sans-serif;
-    font-weight: 400;
-    font-size: 28px;
-    color: #1f1f1f;
-  }
-  #cart-table {
-    width: 94%;
-    margin: auto;
-    height: auto;
-    display: flex;
-    gap: 15px;
-  }
-  .item-table {
-    width: 70%;
-    border: 1px solid #ddd;
-    height: fit-content;
-    margin-bottom: 50px;
-  }
-  .table-top {
-    height: 50px;
-    background-color: #003953;
-    color: white;
-    margin-top: 0px;
-    display: flex;
-    justify-content: space-between;
-    padding: 0px 30px;
-  }
-  .table-top p {
-    font-family: "Open Sans", sans-serif;
-    font-size: 14px;
-    font-weight: 400;
-  }
-  .item-table .tbody > .trow {
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    height: 200px;
-  }
-  .leftside {
-    display: flex;
-  }
-  .rightside a {
-    display: block;
-  }
-  .table-action {
-    margin-right: 50px;
-  }
-  .leftside img {
-    margin: 15px;
-    width: 50%;
-    box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px,
-      rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
-  }
-  .leftside > div {
-    width: 100%;
-  }
-  .leftside > div h4 {
-    font-family: "Open Sans", sans-serif;
-    font-weight: 400;
-    font-size: 14px;
-    color: #003953;
-  }
-  .leftside > div h3 {
-    font-family: "Open Sans", sans-serif;
-    font-size: 14px;
-    font-weight: 600;
-    margin-top: -15px;
-  }
-  .leftside > div h3 + p {
-    font-family: "Open Sans", sans-serif;
-    font-size: 14px;
-    font-weight: 400;
-    line-height: 24px;
-    margin-top: -5px;
-  }
-  .leftside > div p + p {
-    font-family: "Open Sans", sans-serif;
-    font-size: 14px;
-    font-weight: 400;
-    line-height: 24px;
-    margin-top: -15px;
-  }
-  .btn-minddle {
-    padding: 4px 8px;
-    margin-right: 5px;
-    cursor: pointer;
-    border: 1px solid transparent;
-  }
-  .inc-btn {
-    padding: 4px 8px;
-    margin-right: 5px;
-    cursor: pointer;
-    border: 1px solid transparent;
-  }
-  .inc-btn:hover {
-    border: 1px solid black;
-  }
-  .dec-btn {
-    padding: 4px 8px;
-    cursor: pointer;
-    border: 1px solid transparent;
-  }
-  .dec-btn:hover {
-    border: 1px solid black;
-  }
-  .rightside {
-    width: 150px;
-  }
-  .rightside h1 {
-    font-family: "Open Sans", sans-serif;
-    font-weight: 600;
-    line-height: 24px;
-    font-size: 16px;
-    color: #ce144b;
-    margin-top: 20px;
-  }
-  .rightside h3 {
-    font-family: "Open Sans", sans-serif;
-    font-weight: 400;
-    font-size: 12px;
-    color: #707070;
-    margin-top: -10px;
-  }
-  .rightside select {
-    transition: all 0.3s ease 0s;
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    -o-appearance: none;
-    appearance: none;
-    border: 2px solid #ddd;
-    border-radius: 4px;
-    background-color: #fff;
-    color: #000;
-    font: 400 16px Open Sans, sans-serif;
-    padding: 8px 38px 8px 12px;
-    background-position: right 12px center;
-    background-repeat: no-repeat;
-    width: 80px;
-    height: 40px;
-  }
-  .rightside a {
-    color: #003953;
-    font-size: 14px;
-    font-weight: 700;
-    font-family: "Open Sans", sans-serif;
-    margin-top: 10px;
-    text-transform: uppercase;
-  }
-  .rightside a:hover {
-    color: #0076bd;
-  }
-  #cart-table .checkout-table {
-    background-color: #f5f5f5;
-    width: 30%;
-    border: 1px solid #ddd;
-    height: 150px;
-    padding: 10px;
-  }
-  .checkout-table button {
-    color: #035d59;
-    font: 700 14px/120% Open Sans, sans-serif;
-    border: 2px solid #a7e688;
-    border-radius: 4px;
-    padding: 12px 14px;
-    cursor: pointer;
-    text-decoration: none;
-    text-transform: uppercase;
-    touch-action: manipulation;
-    text-align: center;
-    transition: all 0.3s ease 0s;
-    -webkit-user-select: none;
-    -ms-user-select: none;
-    -moz-user-select: none;
-    -o-user-select: none;
-    user-select: none;
-    background: #a7e688;
-    width: 100%;
-    min-width: 205px;
-  }
-  .checkout-table > button:hover {
-    background-color: #c3f4aa;
-    border-color: #c3f4aa;
-  }
-  .checkout-table > button::selection {
-    background: #b3d4fc;
-    text-shadow: none;
-  }
-  .checkout-table > p {
-    font-family: "Open Sans", sans-serif;
-    font-weight: 400;
-    font-size: 12px;
-    color: #1f1f1f;
-  }
-  .checkout-table > h3 {
-    font-family: "Open Sans", sans-serif;
-    font-size: 18px;
-    font-weight: 600;
-    color: #1f1f1f;
-  }
-  .checkout-table > div {
-    display: flex;
-    justify-content: space-between;
-    margin-top: -20px;
-  }
-  .checkout-table h4 {
-    font-family: "Open Sans", sans-serif;
-    font-size: 14px;
-    color: #1f1f1f;
-    font-weight: 600;
-  }
-  .checkout-table > .chekbox-below {
-    font-size: 13px;
-    font-weight: 400;
-    font-family: "Open Sans", sans-serif;
-    color: #707070;
-  }
-  .checkout-table > .chekbox-below a {
-    color: #003953;
-    font-size: 14px;
-    font-family: "Open Sans", sans-serif;
-  }
-  .checkout-table > .chekbox-below a:hover {
-    color: #0076bd;
-  }
-  .popular-categories {
-    height: 400px;
-    width: 94%;
-    margin: auto;
-    margin-top: 50px;
-  }
-  .popular-categories > h1 {
-    font-family: "Open Sans", sans-serif;
-    font-size: 18px;
-    color: #1f1f1f;
-    font-weight: 600;
-  }
-  .product-row {
-    display: grid;
-    grid-template-columns: repeat(6, 1fr);
-    grid-template-rows: 270px;
-    gap: 15px;
-    margin-top: 30px;
-  }
-  .productPic {
-    height: 100%;
-    width: 100%;
-    padding: 10px;
-  }
-  .productPic > div {
-    width: fit-content;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px,
-      rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
-  }
-  .productPic > div > img {
-    width: 90%;
-  }
-  .productPic > p {
-    margin: auto;
-    margin-top: 15px;
-    border: white;
-    background-color: white;
-    font-size: 14px;
-    font-weight: 400;
-    color: #003953;
-    font-family: "Open Sans", sans-serif;
-    text-decoration: none;
-  }
-  .productPic p:hover {
-    color: #000;
-  }
-  .productPic > p + p {
-    margin-top: 5px;
-  }
-  .product-row a {
-    color: #1f1f1f;
-    text-decoration: none;
-  }
-  .product-row > a:hover {
-    cursor: pointer;
-    color: #0076bd;
-  }
+  margin: 0;
+  padding: 0;
+
+}
+
+#cart-page {
+  font-family: Family "Open Sans", sans-serif;
+  color: #1f1f1f;
+  margin-top: 28px;
+  /* border: 1px solid red; */
+  width: 100%;
+  margin: auto;
+}
+
+.top-bar {
+  box-sizing: border-box;
+  color: #1f1f1f;
+  height: 32px;
+  font: 400 14px Open Sans, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #e5f1f8;
+  color: #003953;
+  width: 100%;
+  max-width: 100%;
+  padding: 6px;
+  margin: 0 auto;
+}
+
+.top-bar>p {
+  display: inline-block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.top-bar>p::before {
+  content: " ";
+  background-repeat: no-repeat;
+  width: 17px;
+  height: 16px;
+  background-position: -150px -280px;
+  margin-right: 5px;
+}
+
+.top-bar a {
+  color: #003953;
+}
+
+.top-bar a:hover {
+  color: #0076bd;
+}
+
+#shipping-privacy {
+  width: 94%;
+  margin: auto;
+}
+
+#shipping-privacy h3 {
+  font-family: "Open Sans", sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  color: #003953;
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
+
+#shipping-privacy h3:before {
+  background-repeat: no-repeat;
+  width: 9px;
+  height: 14px;
+  background-position: -25px -35px;
+  content: "";
+  margin-left: -15px;
+  position: absolute;
+}
+
+#shipping-privacy h3:hover {
+  color: #0076bd;
+}
+
+.two-row {
+  display: flex;
+  gap: 20px;
+  width: 100%;
+}
+
+.free-shipping {
+  background-color: #f5f5f5;
+  width: 100%;
+  display: flex;
+  padding: 15px 20px;
+}
+
+.free-shipping>.below-img-text {
+  margin-left: 20px;
+  width: 100%;
+}
+
+.below-img-text>p {
+  margin-top: 0px;
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  color: #1f1f1f;
+}
+
+.below-img-text>p+p {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  font-size: 12px;
+  color: #1f1f1f;
+  margin-top: -15px;
+  margin-bottom: 10px;
+}
+
+.below-img-text a {
+  color: #003953;
+  font-size: 14px;
+  font-weight: 700;
+  font-family: "Open Sans", sans-serif;
+}
+
+.below-img-text a:hover {
+  color: #0076bd;
+}
+
+.privacy-policy {
+  background-color: #f5f5f5;
+  width: 100%;
+  display: flex;
+  padding: 15px 20px;
+}
+
+.privacy-policy>.below-img-text {
+  margin-left: 20px;
+  width: 100%;
+}
+
+.below-img-text>p {
+  margin-top: 0px;
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  color: #1f1f1f;
+}
+
+.below-img-text>p+p {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  font-size: 12px;
+  color: #1f1f1f;
+  margin-top: 0px;
+}
+
+.below-img-text a {
+  color: #003953;
+  font-size: 14px;
+  font-weight: 700;
+  font-family: "Open Sans", sans-serif;
+}
+
+.below-img-text a:hover {
+  color: #0076bd;
+}
+
+.table-heading {
+  width: 94%;
+  margin: auto;
+  margin-top: 40px;
+}
+
+.table-heading h1 {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  font-size: 28px;
+  color: #1f1f1f;
+}
+
+#cart-table {
+  width: 94%;
+  margin: auto;
+  height: auto;
+  display: flex;
+  gap: 15px;
+}
+
+.item-table {
+  width: 70%;
+  border: 1px solid #ddd;
+  height: fit-content;
+  margin-bottom: 50px;
+}
+
+.table-top {
+  height: 50px;
+  background-color: #003953;
+  color: white;
+  margin-top: 0px;
+  display: flex;
+  justify-content: space-between;
+  padding: 0px 30px;
+}
+
+.table-top p {
+  font-family: "Open Sans", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  margin-top: 15px;
+}
+
+.item-table .tbody>.trow {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  height: 200px;
+}
+
+.leftside {
+  display: flex;
+}
+
+.rightside a {
+  display: block;
+}
+
+.table-action {
+  margin-right: 50px;
+}
+
+.leftside img {
+  margin: 15px;
+  width: 50%;
+  box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px,
+    rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+}
+
+.leftside>div {
+  width: 100%;
+}
+
+.leftside>div h4 {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  color: #003953;
+}
+
+.leftside>div h3 {
+  font-family: "Open Sans", sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  margin-top: -15px;
+}
+
+.leftside>div h3+p {
+  font-family: "Open Sans", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+  margin-top: -5px;
+}
+
+.leftside>div p+p {
+  font-family: "Open Sans", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+  margin-top: -15px;
+}
+
+.btn-minddle {
+  padding: 4px 8px;
+  margin-right: 5px;
+  cursor: pointer;
+  border: 1px solid transparent;
+}
+
+.inc-btn {
+  padding: 4px 8px;
+  margin-right: 5px;
+  cursor: pointer;
+  border: 1px solid transparent;
+}
+
+.inc-btn:hover {
+  border: 1px solid black;
+}
+
+.dec-btn {
+  padding: 4px 8px;
+  cursor: pointer;
+  border: 1px solid transparent;
+}
+
+.dec-btn:hover {
+  border: 1px solid black;
+}
+
+.rightside {
+  width: 150px;
+}
+
+.rightside h1 {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 600;
+  line-height: 24px;
+  font-size: 16px;
+  color: #ce144b;
+  margin-top: 20px;
+}
+
+.rightside h3 {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  font-size: 12px;
+  color: #707070;
+  margin-top: -10px;
+}
+
+.rightside select {
+  transition: all 0.3s ease 0s;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -o-appearance: none;
+  appearance: none;
+  border: 2px solid #ddd;
+  border-radius: 4px;
+  background-color: #fff;
+  color: #000;
+  font: 400 16px Open Sans, sans-serif;
+  padding: 8px 38px 8px 12px;
+  background-position: right 12px center;
+  background-repeat: no-repeat;
+  width: 80px;
+  height: 40px;
+}
+
+.rightside a {
+  color: #003953;
+  font-size: 14px;
+  font-weight: 700;
+  font-family: "Open Sans", sans-serif;
+  margin-top: 10px;
+  text-transform: uppercase;
+}
+
+.rightside a:hover {
+  color: #0076bd;
+}
+
+#cart-table .checkout-table {
+  background-color: #f5f5f5;
+  width: 30%;
+  border: 1px solid #ddd;
+  height: 150px;
+  padding: 10px;
+}
+
+.checkout-table button {
+  color: #035d59;
+  font: 700 14px/120% Open Sans, sans-serif;
+  border: 2px solid #a7e688;
+  border-radius: 4px;
+  padding: 12px 14px;
+  cursor: pointer;
+  text-decoration: none;
+  text-transform: uppercase;
+  touch-action: manipulation;
+  text-align: center;
+  transition: all 0.3s ease 0s;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  -moz-user-select: none;
+  -o-user-select: none;
+  user-select: none;
+  background: #a7e688;
+  width: 100%;
+  min-width: 205px;
+}
+
+.checkout-table>button:hover {
+  background-color: #c3f4aa;
+  border-color: #c3f4aa;
+}
+
+.checkout-table>button::selection {
+  background: #b3d4fc;
+  text-shadow: none;
+}
+
+.checkout-table>p {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  font-size: 12px;
+  color: #1f1f1f;
+  margin-top: 10px;
+}
+
+.checkout-table>h3 {
+  font-family: "Open Sans", sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+  color: #1f1f1f;
+  margin-top: 10px;
+}
+
+.checkout-table>div {
+  display: flex;
+  justify-content: space-between;
+  margin-top: -20px;
+  margin-top: 10px;
+}
+
+.checkout-table h4 {
+  font-family: "Open Sans", sans-serif;
+  font-size: 15px;
+  color: #1f1f1f;
+  font-weight: 600;
+  margin-top: 10px;
+}
+
+.checkout-table>.chekbox-below {
+  font-size: 13px;
+  font-weight: 400;
+  font-family: "Open Sans", sans-serif;
+  color: #707070;
+  margin-top: 35px;
+}
+
+.checkout-table>.chekbox-below a {
+  color: #003953;
+  font-size: 14px;
+  font-family: "Open Sans", sans-serif;
+
+}
+
+.checkout-table>.chekbox-below a:hover {
+  color: #0076bd;
+}
+
+.popular-categories {
+  height: 400px;
+  width: 94%;
+  margin: auto;
+  margin-top: 50px;
+}
+
+.popular-categories>h1 {
+  font-family: "Open Sans", sans-serif;
+  font-size: 18px;
+  color: #1f1f1f;
+  font-weight: 600;
+}
+
+.product-row {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: 270px;
+  gap: 15px;
+  margin-top: 30px;
+}
+
+.productPic {
+  height: 100%;
+  width: 100%;
+  padding: 10px;
+}
+
+.productPic>div {
+  width: fit-content;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px,
+    rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+}
+
+.productPic>div>img {
+  width: 90%;
+}
+
+.productPic>p {
+  margin: auto;
+  margin-top: 15px;
+  border: white;
+  background-color: white;
+  font-size: 14px;
+  font-weight: 400;
+  color: #003953;
+  font-family: "Open Sans", sans-serif;
+  text-decoration: none;
+}
+
+.productPic p:hover {
+  color: #000;
+}
+
+.productPic>p+p {
+  margin-top: 5px;
+}
+
+.product-row a {
+  color: #1f1f1f;
+  text-decoration: none;
+}
+
+.product-row>a:hover {
+  cursor: pointer;
+  color: #0076bd;
+}
+
+#popularItem {
+  width: 94%;
+  margin: auto;
+  margin-top: 30px;
+  margin-bottom: 200px;
+}
+
+#popularItem h2 {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 600;
+  font-size: 24px;
+  color: #1f1f1f;
+}
+
+#popularItem>div {
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: auto;
+  display: grid;
+  gap: 0px 15px;
+}
+
+.popularPic>div {
+  /* border: 1px solid red; */
+  width: 100%;
+  height: 170px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px,
+    rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+  padding: 10px 0px;
+}
+
+.popularPic>div>img {
+  width: 90%;
+  height: 100%;
+}
+
+.popularPic>h3 {
+  margin-bottom: 5px;
+  font-size: 14px;
+  font-weight: 400;
+  color: #3a3a3a;
+  margin-top: 10px;
+}
+
+.popularPic>h4 {
+  margin-bottom: 20px;
+  font-size: 14px;
+  font-weight: 600;
+  color: #3d3d3d;
+  margin-top: 10px;
+}
+
+h5 {
+  color: #045e96;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.love {
+  display: block;
+  background: transparent;
+  height: 44px;
+  min-width: 44px;
+  width: 100%;
+  max-width: 100px;
+  text-align: left;
+  border: none;
+  padding: 0;
+  z-index: 2;
+  cursor: pointer;
+  color: #707070;
+  font-size: 16px;
+  overflow: hidden;
+  position: relative;
+  text-indent: 22px;
+  font-size: 15px;
+  margin-bottom: -15px;
+}
+
+.love:before {
+  background-image: url(https://m.media-amazon.com/images/G/01/zappos/melody/melody-sprite.2021.09.16._TTH_.svg);
+  background-repeat: no-repeat;
+  width: 16px;
+  height: 14px;
+  background-position: -4px -140px;
+  display: block;
+  border: none;
+  cursor: pointer;
+  content: "";
+  top: calc(50% - 6px);
+  position: absolute;
+}
+
+@media all and (min-width: 320px) and (max-width: 1024px) {
+
+  .popular-categories,
   #popularItem {
-    width: 94%;
-    margin: auto;
-    margin-top: 30px;
-    margin-bottom: 200px;
+    display: none;
   }
-  #popularItem h2 {
-    font-family: "Open Sans", sans-serif;
-    font-weight: 600;
-    font-size: 24px;
-    color: #1f1f1f;
+}
+
+@media all and (min-width: 650px) and (max-width: 917px) {
+  .rightside {
+    width: 180px;
   }
-  #popularItem > div {
-    grid-template-columns: repeat(6, 1fr);
-    grid-template-rows: auto;
-    display: grid;
-    gap: 0px 15px;
+}
+
+@media all and (min-width: 320px) and (max-width: 650px) {
+  #shipping-privacy {
+    display: none;
   }
-  .popularPic > div {
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px,
-      rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
-    padding: 10px 0px;
+
+  #cart-table {
+    width: 96%;
+    flex-direction: column;
+    gap: 15px;
   }
-  .popularPic > div > img {
-    width: 90%;
-  }
-  .popularPic > h3 {
-    margin-bottom: -15px;
-    font-size: 14px;
-    font-weight: 400;
-    color: #3a3a3a;
-  }
-  .popularPic > h4 {
-    margin-bottom: -20px;
-    font-size: 14px;
-    font-weight: 600;
-    color: #3d3d3d;
-  }
-  h5 {
-    color: #045e96;
-    font-size: 14px;
-    font-weight: 400;
-  }
-  .love {
-    display: block;
-    background: transparent;
-    height: 44px;
-    min-width: 44px;
+
+  .item-table {
     width: 100%;
-    max-width: 100px;
-    text-align: left;
-    border: none;
-    padding: 0;
-    z-index: 2;
-    cursor: pointer;
-    color: #707070;
-    font-size: 16px;
-    overflow: hidden;
-    position: relative;
-    text-indent: 22px;
-    font-size: 15px;
-    margin-bottom: -15px;
   }
-  .love:before {
-    background-image: url(https://m.media-amazon.com/images/G/01/zappos/melody/melody-sprite.2021.09.16._TTH_.svg);
-    background-repeat: no-repeat;
-    width: 16px;
-    height: 14px;
-    background-position: -4px -140px;
-    display: block;
-    border: none;
-    cursor: pointer;
-    content: "";
-    top: calc(50% - 6px);
-    position: absolute;
+
+  #cart-table .checkout-table {
+    width: 100%;
   }
-  
-  @media all and (min-width: 320px) and (max-width: 1024px) {
-    .popular-categories,
-    #popularItem {
-      display: none;
-    }
+
+  .table-action {
+    margin-right: 0px;
   }
-  @media all and (min-width: 650px) and (max-width: 917px) {
-    .rightside {
-      width: 180px;
-    }
-  }
-  @media all and (min-width: 320px) and (max-width: 650px) {
-    #shipping-privacy {
-      display: none;
-    }
-    #cart-table {
-      width: 96%;
-      flex-direction: column;
-      gap: 15px;
-    }
-    .item-table {
-      width: 100%;
-    }
-    #cart-table .checkout-table {
-      width: 100%;
-    }
-    .table-action {
-      margin-right: 0px;
-    }
-  }
+}
