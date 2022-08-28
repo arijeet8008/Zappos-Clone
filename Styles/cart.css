@@ -228,6 +228,17 @@ body {
   display: flex;
 }
 
+.leftside>div {
+  padding: 25% 0;
+}
+.trow h4{
+  margin: 20px 0;
+}
+
+.trow h3 {
+  margin: 20px 0;
+}
+
 .rightside a {
   display: block;
   
@@ -235,6 +246,11 @@ body {
 
 .table-action {
   margin-right: 50px;
+  padding: 25% 0;
+}
+
+.table-action h3{
+  padding-top: 20px;
 }
 
 .leftside img {
