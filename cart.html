@@ -9,14 +9,15 @@
       href="https://www.zappos.com/favicon.ico"
       type="image/x-icon"
     />
-    <link rel="stylesheet" href="./Styles/cart.css" />
-
+    
     <title>My Cart | Zappos.com</title>
-    <!-- <link rel="stylesheet" href="./Styles/footer.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> -->
+    <link rel="stylesheet" href="./Styles/cart.css">
+    <link rel="stylesheet" href="./Styles/navbar.css">
+    <link rel="stylesheet" href="./Styles/footer.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   </head>
   <body>
-    <div id="header"></div>
+    <div id="navbar"></div>
     <div id="cart-page">
       <div class="top-bar">
         <p>
@@ -25,9 +26,9 @@
         </p>
       </div>
       <div id="shipping-privacy">
-        
-          <h3>CONTINUE SHOPPING</h3>
-        
+        <a href="./productDetails.html">
+          <h3><<   CONTINUE SHOPPING</h3>
+        </a>
         <div class="two-row">
           <div class="free-shipping">
             <div class="img">
@@ -95,6 +96,7 @@
       <div class="popular-categories">
         <h1>Customers Who Bought Items In Your Shopping Cart Also Bought</h1>
         <div class="product-row">
+          <a href="./productDetails.html">
             <div class="productPic">
               <div>
                 <img
@@ -105,7 +107,8 @@
               <p>Steve Madden</p>
               <p>Submit Wedge Sandal</p>
             </div>
-          
+          </a>
+          <a href="./productDetails.html">
             <div class="productPic">
               <div>
                 <img
@@ -116,7 +119,8 @@
               <p>Brooks</p>
               <p>Sherpa 7" Shorts</p>
             </div>
-          
+          </a>
+          <a href="./productDetails.html">
             <div class="productPic">
               <div>
                 <img
@@ -127,7 +131,8 @@
               <p>Charles by Charles David</p>
               <p>Love</p>
             </div>
-          
+          </a>
+          <a href="./productDetails.html">
             <div class="productPic">
               <div>
                 <img
@@ -138,7 +143,8 @@
               <p>New Balance</p>
               <p>Impact run & shorts</p>
             </div>
-          
+          </a>
+          <a href="./productDetails.html">
             <div class="productPic">
               <div>
                 <img
@@ -149,7 +155,8 @@
               <p>Mia</p>
               <p>Maine</p>
             </div>
-          
+          </a>
+          <a href="./productDetails.html">
             <div class="productPic">
               <div>
                 <img
@@ -160,12 +167,13 @@
               <p>Alternative</p>
               <p>Vintage 50/50 Backstage Tank Top</p>
             </div>
-         
+          </a>
         </div>
       </div>
       <div id="popularItem">
         <h2>Your Recently Viewed Items</h2>
         <div class="popular-row">
+          <a href="./productDetails.html">
           <div class="popularPic">
             <div>
               <img
@@ -183,6 +191,8 @@
             <h4>Classic Clog (Little Kid/Big..</h4>
             <h5>$39.95</h5>
           </div>
+        </a>
+        <a href="./productDetails.html">
           <div class="popularPic">
             <div>
               <img
@@ -199,6 +209,8 @@
             <h4>Classic Clog (Little Kid/Big..</h4>
             <h5>$39.95</h5>
           </div>
+        </a>
+        <a href="./productDetails.html">
           <div class="popularPic">
             <div>
               <img
@@ -216,6 +228,8 @@
             <h4>Classic Clog (Little Kid/Big..</h4>
             <h5>$39.95</h5>
           </div>
+        </a>
+        <a href="./productDetails.html">
           <div class="popularPic">
             <div>
               <img
@@ -233,6 +247,8 @@
             <h4>Adilette Comfort Slides</h4>
             <h5>$39.95</h5>
           </div>
+        </a>
+        <a href="./productDetails.html">
           <div class="popularPic">
             <div>
               <img
@@ -250,6 +266,8 @@
             <h4>Yolo</h4>
             <h5>$69.94</h5>
           </div>
+        </a>
+        <a href="./productDetails.html">
           <div class="popularPic">
             <div>
               <img
@@ -269,20 +287,32 @@
               $22.49
               <span style="color: grey; font-size: 12px"> MSRP: $25.00</span>
             </h5>
-          </div>
+          </div></a> 
         </div>
       </div>
     </div>
     <div id="footer"></div>
   </body>
+  <script src="./Scripts/cart.js"></script>
+  <script type="module">
+    import navbar from "./Components/import_navbar.js"
+    
+    let data_cont = document.getElementById("navbar");
+    data_cont.innerHTML= navbar()  
+    
+  </script>
+  
+  <script src="./Scripts/update_navbar.js"></script>
+
+  <script type="module">
+    import footer from "./Components/footer_import.js"
+    
+    let cont = document.getElementById("footer");
+    cont.innerHTML = footer()
+  
+  </script>
+
  </html>
 
- <script src="./Scripts/cart.js"></script>
 
- <!-- <script type="module">
-  import footer from "./Components/footer_import.js"
-  
-  let cont = document.getElementById("footer");
-  cont.innerHTML = footer()
 
-</script>  -->
