@@ -3,7 +3,7 @@
 <h2>Team Members</h2>
 <br/>
 
-1.) Arijit Choudhary [Github profile](https://github.com/arijeet8008)
+1.) Arijeet Chowdhury [Github profile](https://github.com/arijeet8008)
 
 2.) Abhishek D. Patil [Github profile](https://github.com/abhishek-0713)
 
